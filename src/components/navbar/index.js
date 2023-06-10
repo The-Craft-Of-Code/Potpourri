@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const NavBarRoot = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border: 1px solid #000000;
-`
-
 export const Flex1Container = styled.div`
   display: flex;
   flex: 1;
@@ -45,10 +38,44 @@ export const BlogButton = styled.button`
   cursor: pointer;
   outline: inherit;
   transition: all 0.2s ease-in-out;
-  
+
   &:hover {
     background-color: #000000;
     color: #FFFFFF;
   }
+`
 
+export const DropDownButton = styled.button`
+  
+`
+
+
+export const NavBarRoot = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #000000;
+
+  @media (max-width: 768px) {
+    ${ButtonContainer} {
+      display: none;
+      visibility: hidden;
+    }
+
+    ${Flex1Container}:nth-child(2) {
+      display: none;
+      visibility: hidden;
+    }
+
+    ${Flex1Container}:nth-child(1) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    ${BlogButton} {
+      display: none;
+      visibility: hidden;
+    }
+
+  }
 `
