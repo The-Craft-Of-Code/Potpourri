@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {colors} from "../../colors";
 
 export const Flex1Container = styled.div`
   display: flex;
@@ -6,8 +7,6 @@ export const Flex1Container = styled.div`
   max-width: 30%;
   align-items: center;
   justify-content: center;
-  padding-left: 3em;
-  padding-right: 3em;
 `
 
 export const ButtonContainer = styled.div`
@@ -30,7 +29,7 @@ export const Name = styled.h1`
 
 export const BlogButton = styled.button`
   border-radius: 30px;
-  width: 100%;
+  width: 80%;
   border: 1px solid #000000;
   padding: 0.7em;
   background-color: #FFFFFF;
@@ -46,35 +45,92 @@ export const BlogButton = styled.button`
 `
 
 export const DropDownButton = styled.button`
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: all 0.2s ease-in-out;
+  font-size: 30px;
+  display: none;
   
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  
+  &:hover {
+    scale: 1.1;
+  }
+`
+
+export const DropDownModal = styled.div`
+  z-index: 50;
+  border-bottom: 1px solid #000000;
+  padding: 2em;
+  background-color: ${colors.backgroundColor};
+  display: none;
+  transition: all 0.2s ease-in-out;
+  transform: ${props => props.show ? "translateY(0)" : "translateY(-100%)"};
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  @media (max-width: 768px) {
+    display: flex;
+    
+    ${BlogButton} {
+      margin-top: 1em;
+    }
+  }
+
+`
+
+export const NavBarContainer = styled.div`
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: ${props => props.blur ? "blur(5px)" : "none"};
+  background-color: ${props => props.blur ? "rgba(0, 0, 0, 0.5)" : "none"};
 `
 
 
 export const NavBarRoot = styled.div`
+  z-index: 100;
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 1px solid #000000;
+  height: 75px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-color: ${colors.backgroundColor};
+  top: 0;
 
   @media (max-width: 768px) {
     ${ButtonContainer} {
       display: none;
-      visibility: hidden;
     }
 
-    ${Flex1Container}:nth-child(2) {
+    ${Flex1Container}:nth-child(3) {
       display: none;
-      visibility: hidden;
     }
 
     ${Flex1Container}:nth-child(1) {
       padding-left: 1em;
       padding-right: 1em;
+      flex: 1;
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
 
     ${BlogButton} {
       display: none;
-      visibility: hidden;
     }
 
   }

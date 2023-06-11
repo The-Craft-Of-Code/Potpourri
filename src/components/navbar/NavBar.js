@@ -1,16 +1,55 @@
-import React from "react";
-import {BlogButton, ButtonContainer, DropDownButton, Flex1Container, Name, NavBarRoot} from "./index";
+import React, {useState} from "react";
+import {
+  BlogButton,
+  ButtonContainer,
+  Name,
+  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer,
+} from "./index";
+import {BiMenuAltRight} from "react-icons/bi";
+import {AiOutlineClose} from "react-icons/ai";
 
 export function NavBar() {
+
+  const [showDropDown, setShowDropDown] = useState(false);
+
   return (
-    <NavBarRoot>
-      <Flex1Container id={"name-container"}>
-        <Name>
-          Potputti
-        </Name>
-      </Flex1Container>
-      <ButtonContainer id={"button-container"}>
-        {/*TODO: Replace with actual links as we progress*/}
+    <NavBarContainer blur={showDropDown}>
+      <NavBarRoot>
+        <Flex1Container>
+          <Name>
+            Potputti
+          </Name>
+          <DropDownButton onClick={() => setShowDropDown(!showDropDown)}>
+            {showDropDown
+              ? <AiOutlineClose/> : <BiMenuAltRight/>
+            }
+          </DropDownButton>
+        </Flex1Container>
+        <ButtonContainer>
+          {/*TODO: Replace with actual links as we progress*/}
+          <div>
+            Home
+          </div>
+          <div>
+            Why us?
+          </div>
+          <div>
+            Works
+          </div>
+          <div>
+            Services
+          </div>
+          <div>
+            Profile
+          </div>
+        </ButtonContainer>
+        <Flex1Container>
+          <BlogButton>
+            Blog
+          </BlogButton>
+        </Flex1Container>
+      </NavBarRoot>
+      <DropDownModal show={showDropDown}>
         <div>
           Home
         </div>
@@ -26,12 +65,10 @@ export function NavBar() {
         <div>
           Profile
         </div>
-      </ButtonContainer>
-      <Flex1Container id={"blog-container"}>
         <BlogButton>
           Blog
         </BlogButton>
-      </Flex1Container>
-    </NavBarRoot>
+      </DropDownModal>
+    </NavBarContainer>
   );
 }
