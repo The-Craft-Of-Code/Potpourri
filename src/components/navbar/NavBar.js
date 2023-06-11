@@ -13,7 +13,7 @@ export function NavBar() {
   const [showDropDown, setShowDropDown] = useState(false);
 
   return (
-    <NavBarContainer blur={showDropDown}>
+    <NavBarContainer blur={showDropDown ? 1 : 0}>
       <NavBarRoot>
         <Flex1Container>
           <Name>
@@ -49,7 +49,7 @@ export function NavBar() {
           </BlogButton>
         </Flex1Container>
       </NavBarRoot>
-      <DropDownModal show={showDropDown}>
+      <DropDownModal show={showDropDown ? 1 : 0}>
         <div>
           Home
         </div>
