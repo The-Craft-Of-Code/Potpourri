@@ -3,12 +3,12 @@ import {
   BlogButton,
   ButtonContainer,
   Name,
-  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer,
+  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer, LinkButton,
 } from "./index";
 import {BiMenuAltRight} from "react-icons/bi";
 import {AiOutlineClose} from "react-icons/ai";
 
-export function NavBar() {
+export function NavBar(props) {
 
   const [showDropDown, setShowDropDown] = useState(false);
 
@@ -26,22 +26,21 @@ export function NavBar() {
           </DropDownButton>
         </Flex1Container>
         <ButtonContainer>
-          {/*TODO: Replace with actual links as we progress*/}
-          <div>
+          <LinkButton active={props.currentPage === 0 || props.currentPage === 1 ? 1 : 0} onClick={() => props.scroll(0)}>
             Home
-          </div>
-          <div>
+          </LinkButton>
+          <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
             Why us?
-          </div>
-          <div>
+          </LinkButton>
+          <LinkButton active={props.currentPage === 3 ? 1 : 0} onClick={() => props.scroll(3)}>
             Works
-          </div>
-          <div>
+          </LinkButton>
+          <LinkButton active={props.currentPage === 4 ? 1 : 0} onClick={() => props.scroll(4)}>
             Services
-          </div>
-          <div>
+          </LinkButton>
+          <LinkButton active={props.currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
             Profile
-          </div>
+          </LinkButton>
         </ButtonContainer>
         <Flex1Container>
           <BlogButton>
@@ -50,24 +49,21 @@ export function NavBar() {
         </Flex1Container>
       </NavBarRoot>
       <DropDownModal show={showDropDown ? 1 : 0}>
-        <div>
+        <LinkButton active={props.currentPage === 0 || props.currentPage === 1 ? 1 : 0} onClick={() => props.scroll(0)}>
           Home
-        </div>
-        <div>
+        </LinkButton>
+        <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
           Why us?
-        </div>
-        <div>
+        </LinkButton>
+        <LinkButton active={props.currentPage === 3 ? 1 : 0} onClick={() => props.scroll(3)}>
           Works
-        </div>
-        <div>
+        </LinkButton>
+        <LinkButton active={props.currentPage === 4 ? 1 : 0} onClick={() => props.scroll(4)}>
           Services
-        </div>
-        <div>
+        </LinkButton>
+        <LinkButton active={props.currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
           Profile
-        </div>
-        <BlogButton>
-          Blog
-        </BlogButton>
+        </LinkButton>
       </DropDownModal>
     </NavBarContainer>
   );

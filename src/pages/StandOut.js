@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {Container, PrimaryTitle, SecondaryTitle, TextContent} from "../components/root";
 import {
   LeftContainer,
@@ -9,10 +9,19 @@ import {
 } from "../components/standout";
 import {LearnMore} from "../components/learnmore/LearnMore";
 import blurImage from "../assets/images/blur-mesh.png";
+import useElementOnScreen from "../utils/useOnScreen";
 
-export function StandOut() {
+export function StandOut(props) {
+
+  let standOutRef = useRef(null);
+  let isStandOutVisible = useElementOnScreen(standOutRef);
+
+  useEffect(() => {
+    isStandOutVisible && props.onVisible();
+  }, [isStandOutVisible, props]);
+
   return (
-    <Container>
+    <Container ref={standOutRef}>
       <StandOutRow>
         <LeftContainer>
           <PrimaryTitle>

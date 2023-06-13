@@ -20,6 +20,17 @@ export const ButtonContainer = styled.div`
   border-right: 1px solid #000000;
   font-family: Subjectivity, sans-serif;
 `
+export const LinkButton = styled.div`
+  font-size: calc(0.65em + 0.4vw);
+  transition: all 0.2s ease-in-out;
+  color: ${props => props.active ? colors.primaryTextColor : colors.black};
+  scale: ${props => props.active ? 1.2 : 1};
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
+`
 
 export const Name = styled.h1`
   font-family: Brant, serif;
