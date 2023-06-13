@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HeroContainer, HeroContent,
+  HeroContent,
   HeroImage,
   HeroImageContainer,
   HeroTextContainer,
@@ -9,10 +9,11 @@ import {
 } from "../components/hero";
 import mesh from "../assets/images/blur-mesh.png";
 import hero from "../assets/images/hero.png";
+import {Container} from "../components/root";
 
 export function HeroPage() {
   return (
-    <HeroContainer>
+    <Container>
       <HeroImageContainer>
         <HeroImage src={hero}/>
         <HeroImage src={mesh}/>
@@ -32,6 +33,6 @@ export function HeroPage() {
           </HeroContent>
         </HeroTextRow>
       </HeroTextContainer>
-    </HeroContainer>
+    </Container>
   );
 }

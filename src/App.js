@@ -3,6 +3,7 @@ import {NavBar} from "./components/navbar/NavBar";
 import {Root, ScrollSpace} from "./components/root";
 import {HeroPage} from "./pages/HeroPage";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
+import {StandOut} from "./pages/StandOut";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <HeroPage/>
           </ParallaxLayer>
           <ParallaxLayer offset={1} speed={0.5}>
+            <StandOut/>
           </ParallaxLayer>
         </Parallax>
     </Root>
