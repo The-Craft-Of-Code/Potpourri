@@ -84,7 +84,5 @@ export const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100%;
-  max-height: max-content;
-  scroll-snap-align: center;
+  height: 100%;
 `

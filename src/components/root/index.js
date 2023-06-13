@@ -16,5 +16,4 @@ export const ScrollSpace = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  scroll-snap-type: both mandatory;
 `

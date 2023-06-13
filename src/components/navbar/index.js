@@ -71,7 +71,7 @@ export const DropDownModal = styled.div`
   background-color: ${colors.backgroundColor};
   display: none;
   transition: all 0.2s ease-in-out;
-  transform: ${props => props.show ? "translateY(0)" : "translateY(-100%)"};
+  transform: ${props => props.show ? "translateY(0)" : "translateY(-200%)"};
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -92,7 +92,7 @@ export const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: ${props => props.blur ? "100%" : "75px"};
   transition: all 0.2s ease-in-out;
   backdrop-filter: ${props => props.blur ? "blur(5px)" : "none"};
   background-color: ${props => props.blur ? "rgba(0, 0, 0, 0.5)" : "none"};
@@ -109,6 +109,7 @@ export const NavBarRoot = styled.div`
   border-bottom: 1px solid #000000;
   background-color: ${colors.backgroundColor};
   top: 0;
+  transition: all 0.2s ease-in-out;
 
   @media (max-width: 768px) {
     ${ButtonContainer} {
