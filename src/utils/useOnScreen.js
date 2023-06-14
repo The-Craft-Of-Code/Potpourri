@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect, useMemo} from "react";
 
-export default function useElementOnScreen(ref, rootMargin = "75px") {
-  const [isIntersecting, setIsIntersecting] = useState(true);
+export default function useElementOnScreen(ref) {
+  const [isIntersecting, setIntersecting] = useState(false)
+
+  const observer = useMemo(() => new IntersectionObserver(
+    ([entry]) => setIntersecting(entry.isIntersecting)
+  ), [])
+
   useEffect(() => {
     let current = ref.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
-      { rootMargin }
-    );
     if (current) {
       observer.observe(current);
     }
@@ -18,6 +17,6 @@ export default function useElementOnScreen(ref, rootMargin = "75px") {
         observer.unobserve(current);
       }
     };
-  }, [ref, rootMargin]);
+  }, [observer, ref]);
   return isIntersecting;
 }
