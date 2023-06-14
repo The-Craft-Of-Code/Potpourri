@@ -7,7 +7,6 @@ export const HeroImageContainer = styled.div`
   position: relative;
 `
 
-//multiple images stacked on each other so should be absolute
 export const HeroImage = styled.img`
   width: 100%;
   height: 100%;
@@ -45,6 +44,10 @@ export const CenterButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const HeroContent = styled.p`
@@ -58,6 +61,28 @@ export const HeroContent = styled.p`
 
 export const PrimaryTextContainer = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+`
+
+export const ScrollDownContainer = styled.div`
+  flex-direction: row;
+  display: none;
+  align-self: start;
+  transition: all 0.3s ease-in-out;
+  color: ${colors.secondaryTextColor};
+
+  &:hover {
+    cursor: pointer;
+    color: ${colors.primaryColor};
+    border-bottom: 2px solid ${colors.primaryColor};
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `
 
 
@@ -77,6 +102,10 @@ export const HeroTextRow = styled.div`
       max-width: 100%;
       text-align: start;
       font-size: 25px;
+    }
+
+    ${PrimaryTextContainer} {
+      width: 100%;
     }
 
     ${SecondaryTitle} {
