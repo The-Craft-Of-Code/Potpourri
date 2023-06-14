@@ -18,7 +18,9 @@ export function HeroPage(props) {
   let isHeroPageVisible = useElementOnScreen(heroPageRef);
 
   useEffect(() => {
-    isHeroPageVisible && props.onVisible();
+    if(isHeroPageVisible) {
+      props.onVisible();
+    }
   }, [isHeroPageVisible, props]);
 
   return (

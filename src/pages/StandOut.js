@@ -17,7 +17,9 @@ export function StandOut(props) {
   let isStandOutVisible = useElementOnScreen(standOutRef);
 
   useEffect(() => {
-    isStandOutVisible && props.onVisible();
+    if(isStandOutVisible) {
+      props.onVisible();
+    }
   }, [isStandOutVisible, props]);
 
   return (

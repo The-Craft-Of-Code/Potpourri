@@ -4,6 +4,7 @@ import {Root} from "./components/root";
 import {HeroPage} from "./pages/HeroPage";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
 import {StandOut} from "./pages/StandOut";
+import {WhyUs} from "./pages/WhyUs";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <StandOut onVisible={() => setCurrentPage(0)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={0.5}>
+          <WhyUs onVisible={() => setCurrentPage(2)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.5}>
         </ParallaxLayer>
