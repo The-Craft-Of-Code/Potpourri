@@ -26,7 +26,7 @@ function App() {
         style={{top: "0", left: "0", height: "calc(100vh - 75px)", marginTop: "75px"}}
       >
         <ParallaxLayer offset={0} speed={0.5}>
-          <HeroPage onVisible={() => setCurrentPage(0)}/>
+          <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll}/>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.5}>
           <StandOut onVisible={() => setCurrentPage(0)}/>

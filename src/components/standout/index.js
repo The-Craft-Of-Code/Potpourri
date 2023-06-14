@@ -1,23 +1,5 @@
 import styled from "styled-components";
 
-export const StandOutRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 3em;
-  flex: 1;
-  
-  &:nth-child(1) {
-    padding-bottom: 0;
-  }
-  
-  &:nth-child(2) {
-    padding-right: 0;
-  }
-  
-`
-
 export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,4 +23,41 @@ export const RightContainerBottom = styled.img`
   flex: 3;
   margin-left: 5em;
   max-width: 55%;
+`
+
+export const StandOutRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3em;
+  flex: 1;
+
+  &:nth-child(1) {
+    padding-bottom: 0;
+  }
+
+  &:nth-child(2) {
+    padding-right: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+
+    &:nth-child(2) {
+      padding-right: 3em;
+    }
+
+    ${RightContainerBottom} {
+      display: none;
+    }
+
+    ${LeftContainerBottom} {
+      align-items: end;
+    }
+
+
+  }
+
 `

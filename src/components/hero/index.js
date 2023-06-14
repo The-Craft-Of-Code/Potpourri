@@ -29,26 +29,35 @@ export const PrimaryTitle = styled.h3`
   font-size: 40px;
   font-weight: 400;
   font-family: Shocka Serif, serif;
-  color: ${colors.primaryTextColor};
+  color: ${colors.primaryColor};
 `
 
 export const SecondaryTitle = styled.h1`
   margin: 0;
   font-size: 120px;
   font-family: Brant, serif;
-  color: ${colors.primaryTextColor};
+  color: ${colors.primaryColor};
   font-weight: 500;
 `
 
+export const CenterButtonContainer = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const HeroContent = styled.p`
-  max-width: 40%;
+  flex: 1;
   margin: 0;
   font-size: 50px;
   font-family: Shocka Serif, serif;
+  color: ${colors.secondaryTextColor};
+
 `
 
 export const PrimaryTextContainer = styled.div`
-  width: 100%;
+  flex: 1;
 `
 
 

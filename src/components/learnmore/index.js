@@ -19,6 +19,6 @@ export const LearnMoreLabel = styled.div`
 
   &:hover {
     cursor: pointer;
-    color: ${colors.primaryTextColor};
+    color: ${colors.primaryColor};
   }
 `

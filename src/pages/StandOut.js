@@ -30,7 +30,7 @@ export function StandOut(props) {
             We make you
           </PrimaryTitle>
           <SecondaryTitle>
-            Stand Out
+            STAND OUT
           </SecondaryTitle>
         </LeftContainer>
         <RightContainer>

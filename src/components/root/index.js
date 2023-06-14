@@ -26,10 +26,11 @@ export const Container = styled.div`
 
 export const PrimaryTitle = styled.h3`
   margin: 0;
+  padding: 0;
   font-size: calc(1.5vw + 1.5vmin);
   font-weight: 400;
   font-family: Shocka Serif, serif;
-  color: ${colors.primaryTextColor};
+  color: ${colors.primaryColor};
   
   @media (max-width: 768px) {
     font-size: calc(1vw + 2vmin);
@@ -39,9 +40,10 @@ export const PrimaryTitle = styled.h3`
 
 export const SecondaryTitle = styled.h1`
   margin: 0;
+  padding: 0;
   font-size: calc(3vw + 3vmin);
   font-family: Brant, serif;
-  color: ${colors.primaryTextColor};
+  color: ${colors.primaryColor};
   font-weight: 500;
 
   @media (max-width: 768px) {

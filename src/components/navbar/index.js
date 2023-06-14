@@ -23,7 +23,7 @@ export const ButtonContainer = styled.div`
 export const LinkButton = styled.div`
   font-size: calc(0.65em + 0.4vw);
   transition: all 0.2s ease-in-out;
-  color: ${props => props.active ? colors.primaryTextColor : colors.black};
+  color: ${props => props.active ? colors.primaryColor : colors.black};
   scale: ${props => props.active ? 1.2 : 1};
   
   &:hover {
