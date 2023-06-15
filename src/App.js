@@ -10,7 +10,7 @@ import {SelectedWorks} from "./pages/SelectedWorks";
 function App() {
 
   let ref = useRef(null);
-  let [currentPage, setCurrentPage] = React.useState(0);
+  let navBarRef = useRef(null);
 
   const scroll = (to) => {
     if (ref.current) {
@@ -18,29 +18,37 @@ function App() {
     }
   };
 
+  const setCurrentPage = (page) => {
+    console.log("Setting current page to " + page)
+    console.log(navBarRef.current)
+    if (navBarRef.current) {
+      navBarRef.current.setCurrentPage(page);
+    }
+  }
+
   return (
     <Root>
-      <NavBar scroll={scroll} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      <NavBar scroll={scroll} ref={navBarRef}/>
       <Parallax
         pages={6}
         ref={ref}
         style={{top: "0", left: "0", height: "calc(100vh - 75px)", marginTop: "75px"}}
       >
-        <ParallaxLayer offset={0} speed={1.0}>
+        <ParallaxLayer offset={0} speed={3.5}>
           <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={1.0}>
+        <ParallaxLayer offset={1} speed={1.35}>
           <StandOut onVisible={() => setCurrentPage(1)}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1.0}>
+        <ParallaxLayer offset={2} speed={1.35}>
           <WhyUs onVisible={() => setCurrentPage(2)}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={1.0}>
+        <ParallaxLayer offset={3} speed={1.35}>
           <SelectedWorks onVisible={() => setCurrentPage(3)}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={1.0}>
+        <ParallaxLayer offset={4} speed={1.35}>
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={1.0}>
+        <ParallaxLayer offset={5} speed={1.35}>
         </ParallaxLayer>
       </Parallax>
     </Root>
