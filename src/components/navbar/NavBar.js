@@ -3,7 +3,7 @@ import {
   BlogButton,
   ButtonContainer,
   Name,
-  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer, LinkButton,
+  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer, LinkButton, RemainingSpace,
 } from "./index";
 import {BiMenuAltRight} from "react-icons/bi";
 import {AiOutlineClose} from "react-icons/ai";
@@ -26,7 +26,8 @@ export function NavBar(props) {
           </DropDownButton>
         </Flex1Container>
         <ButtonContainer>
-          <LinkButton active={(props.currentPage === 0 || props.currentPage === 1) ? 1 : 0} onClick={() => props.scroll(0)}>
+          <LinkButton active={(props.currentPage === 0 || props.currentPage === 1) ? 1 : 0}
+                      onClick={() => props.scroll(0)}>
             Home
           </LinkButton>
           <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
@@ -49,25 +50,41 @@ export function NavBar(props) {
         </Flex1Container>
       </NavBarRoot>
       <DropDownModal show={showDropDown ? 1 : 0}>
-        <LinkButton active={props.currentPage === 0 || props.currentPage === 1 ? 1 : 0} onClick={() => props.scroll(0)}>
+        <LinkButton active={props.currentPage === 0 || props.currentPage === 1 ? 1 : 0} onClick={() => {
+          props.scroll(0)
+          setShowDropDown(false)
+        }}>
           Home
         </LinkButton>
-        <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
+        <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => {
+          props.scroll(2)
+          setShowDropDown(false)
+        }}>
           Why us?
         </LinkButton>
-        <LinkButton active={props.currentPage === 3 ? 1 : 0} onClick={() => props.scroll(3)}>
+        <LinkButton active={props.currentPage === 3 ? 1 : 0} onClick={() => {
+          props.scroll(3)
+          setShowDropDown(false)
+        }}>
           Works
         </LinkButton>
-        <LinkButton active={props.currentPage === 4 ? 1 : 0} onClick={() => props.scroll(4)}>
+        <LinkButton active={props.currentPage === 4 ? 1 : 0} onClick={() => {
+          props.scroll(4)
+          setShowDropDown(false)
+        }}>
           Services
         </LinkButton>
-        <LinkButton active={props.currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
+        <LinkButton active={props.currentPage === 5 ? 1 : 0} onClick={() => {
+          props.scroll(5)
+          setShowDropDown(false)
+        }}>
           Profile
         </LinkButton>
         <BlogButton>
           Blog
         </BlogButton>
       </DropDownModal>
+      <RemainingSpace onClick={() => setShowDropDown(false)}/>
     </NavBarContainer>
   );
 }

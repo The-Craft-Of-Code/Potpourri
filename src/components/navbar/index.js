@@ -97,7 +97,7 @@ export const DropDownModal = styled.div`
   padding: 2em;
   background-color: ${colors.backgroundColor};
   display: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.45s ease-in-out;
   transform: ${props => props.show ? "translateY(0)" : "translateY(-200%)"};
   align-items: center;
   justify-content: center;
@@ -111,6 +111,11 @@ export const DropDownModal = styled.div`
     }
   }
 
+`
+
+export const RemainingSpace = styled.div`
+  flex: 1;
+  width: 100%;
 `
 
 export const NavBarContainer = styled.div`

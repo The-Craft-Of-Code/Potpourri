@@ -52,7 +52,7 @@ export function SelectedWorks(props) {
           {selectedWork.title}
         </SelectedWorkTitle>
         {selectedWork.description.map((item, index) => {
-          return <TextContent>
+          return <TextContent key={index}>
             {item}
           </TextContent>
         })}
