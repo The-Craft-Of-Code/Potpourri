@@ -1,11 +1,11 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import {NavBar} from "./components/navbar/NavBar";
 import {Root} from "./components/root";
 import {HeroPage} from "./pages/HeroPage";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
 import {StandOut} from "./pages/StandOut";
 import {WhyUs} from "./pages/WhyUs";
-import {KeepAlive, Provider} from "react-keep-alive";
+import {SelectedWorks} from "./pages/SelectedWorks";
 
 function App() {
 
@@ -36,6 +36,7 @@ function App() {
           <WhyUs onVisible={() => setCurrentPage(2)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={1.0}>
+          <SelectedWorks onVisible={() => setCurrentPage(3)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={4} speed={1.0}>
         </ParallaxLayer>

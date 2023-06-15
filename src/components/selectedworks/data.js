@@ -38,5 +38,50 @@ export const works = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
     ],
+  },
+  {
+    title: "Work 6",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+    ],
+  },
+  {
+    title: "Work 7",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+    ],
+  },
+  {
+    title: "Work 8",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+    ],
+  },
+  {
+    title: "Work 9",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+    ],
+  },
+  {
+    title: "Work 10",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
+    ],
   }
 ]
