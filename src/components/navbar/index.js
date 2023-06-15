@@ -58,7 +58,7 @@ export const BlogButton = styled.button`
   border-radius: 30px;
   width: 80%;
   border: 1px solid #000000;
-  padding: 0.7em;
+  padding: 0.5em;
   background-color: #FFFFFF;
   font: inherit;
   cursor: pointer;
@@ -162,10 +162,5 @@ export const NavBarRoot = styled.div`
       display: flex;
       justify-content: space-between;
     }
-
-    ${BlogButton} {
-      display: none;
-    }
-
   }
 `

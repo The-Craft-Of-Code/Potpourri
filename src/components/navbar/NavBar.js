@@ -64,6 +64,9 @@ export function NavBar(props) {
         <LinkButton active={props.currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
           Profile
         </LinkButton>
+        <BlogButton>
+          Blog
+        </BlogButton>
       </DropDownModal>
     </NavBarContainer>
   );
