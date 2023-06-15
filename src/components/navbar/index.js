@@ -120,7 +120,7 @@ export const NavBarContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: ${props => props.blur ? "100%" : "75px"};
-  transition: all 0.2s ease-in-out;
+  transition: blur 0.3s ease-in-out, background-color 0.3s ease-in-out;
   backdrop-filter: ${props => props.blur ? "blur(5px)" : "none"};
   background-color: ${props => props.blur ? "rgba(0, 0, 0, 0.5)" : "none"};
 
