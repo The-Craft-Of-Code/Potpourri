@@ -26,7 +26,7 @@ export function NavBar(props) {
           </DropDownButton>
         </Flex1Container>
         <ButtonContainer>
-          <LinkButton active={props.currentPage === 0 || props.currentPage === 1 ? 1 : 0} onClick={() => props.scroll(0)}>
+          <LinkButton active={(props.currentPage === 0 || props.currentPage === 1) ? 1 : 0} onClick={() => props.scroll(0)}>
             Home
           </LinkButton>
           <LinkButton active={props.currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
