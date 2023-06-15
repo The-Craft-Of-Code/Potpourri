@@ -16,7 +16,7 @@ export function NavBar(props) {
     <NavBarContainer blur={showDropDown ? 1 : 0}>
       <NavBarRoot>
         <Flex1Container>
-          <Name>
+          <Name onClick={() => props.scroll(0)}>
             Potputti
           </Name>
           <DropDownButton onClick={() => setShowDropDown(!showDropDown)}>

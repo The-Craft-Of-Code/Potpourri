@@ -53,7 +53,7 @@ export const CenterButtonContainer = styled.div`
 export const HeroContent = styled.p`
   flex: 1;
   margin: 0;
-  font-size: calc(3.5vw + 1.5vmin);
+  font-size: calc(2.5vw + 1.5vmin);
   font-family: Shocka Serif, serif;
   color: ${colors.secondaryTextColor};
 

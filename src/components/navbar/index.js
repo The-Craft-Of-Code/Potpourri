@@ -45,6 +45,13 @@ export const Name = styled.h1`
   font-family: Brant, serif;
   font-size: 30px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.38);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 8px 6px rgba(0, 0, 0, 0.38);
+  }
+
 `
 
 export const BlogButton = styled.button`
