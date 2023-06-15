@@ -19,11 +19,8 @@ function App() {
   };
 
   const setCurrentPage = (page) => {
-    console.log("Setting current page to " + page)
-    console.log(navBarRef.current)
-    if (navBarRef.current) {
+    if (navBarRef.current)
       navBarRef.current.setCurrentPage(page);
-    }
   }
 
   return (
