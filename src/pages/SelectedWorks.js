@@ -37,6 +37,7 @@ export function SelectedWorks(props) {
             works.map((item, index) => {
               return <WorkItem
                 selected={selectedWork === item}
+                key={index}
                 onClick={() => {
                   setSelectedWork(item)
                 }}>

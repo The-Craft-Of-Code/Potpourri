@@ -25,11 +25,20 @@ export const LinkButton = styled.div`
   transition: all 0.2s ease-in-out;
   color: ${props => props.active ? colors.primaryColor : colors.black};
   scale: ${props => props.active ? 1.2 : 1};
-  
+
   &:hover {
     cursor: pointer;
   }
-  
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.75em;
+    font-size: calc(0.8em + 0.8vw);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 `
 
 export const Name = styled.h1`
@@ -65,11 +74,11 @@ export const DropDownButton = styled.button`
   transition: all 0.2s ease-in-out;
   font-size: 30px;
   display: none;
-  
+
   @media (max-width: 768px) {
     display: flex;
   }
-  
+
   &:hover {
     scale: 1.1;
   }
@@ -86,10 +95,10 @@ export const DropDownModal = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
   @media (max-width: 768px) {
     display: flex;
-    
+
     ${BlogButton} {
       margin-top: 1em;
     }
@@ -107,6 +116,12 @@ export const NavBarContainer = styled.div`
   transition: all 0.2s ease-in-out;
   backdrop-filter: ${props => props.blur ? "blur(5px)" : "none"};
   background-color: ${props => props.blur ? "rgba(0, 0, 0, 0.5)" : "none"};
+
+  @media (min-width: 768px) {
+    backdrop-filter: none;
+    background-color: transparent;
+  }
+
 `
 
 

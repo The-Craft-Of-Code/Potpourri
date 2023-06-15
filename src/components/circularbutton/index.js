@@ -16,6 +16,10 @@ export const CircularContainer = styled.div`
     cursor: pointer;
     box-shadow: 0 0 10px #4DDF87, inset 0 0 10px #407a53;
   }
+  
+  @media (max-width: 1000px) {
+    scale: 0.5;
+  }
 
 `
 

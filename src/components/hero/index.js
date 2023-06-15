@@ -33,7 +33,7 @@ export const PrimaryTitle = styled.h3`
 
 export const SecondaryTitle = styled.h1`
   margin: 0;
-  font-size: 120px;
+  font-size: calc(4vw + 50px);
   font-family: Brant, serif;
   color: ${colors.primaryColor};
   font-weight: 500;
@@ -53,7 +53,7 @@ export const CenterButtonContainer = styled.div`
 export const HeroContent = styled.p`
   flex: 1;
   margin: 0;
-  font-size: 50px;
+  font-size: calc(3.5vw + 1.5vmin);
   font-family: Shocka Serif, serif;
   color: ${colors.secondaryTextColor};
 
@@ -106,10 +106,6 @@ export const HeroTextRow = styled.div`
 
     ${PrimaryTextContainer} {
       width: 100%;
-    }
-
-    ${SecondaryTitle} {
-      font-size: 80px;
     }
 
     ${PrimaryTitle} {
