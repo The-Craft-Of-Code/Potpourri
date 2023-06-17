@@ -66,6 +66,7 @@ export const Content = styled.p`
 
 export const Container = styled(DefaultContainer)`
   padding: 3em;
+  transition: all 0.5s ease-in-out;
 
   @media (max-width: 768px) {
     ${RowContainer} {
