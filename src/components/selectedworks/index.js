@@ -35,6 +35,7 @@ export const WorkItem = styled.h1`
   width: 60%;
   font-family: Shocka Serif, serif;
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     cursor: pointer;
