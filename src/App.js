@@ -7,6 +7,7 @@ import {StandOut} from "./pages/StandOut";
 import {WhyUs} from "./pages/WhyUs";
 import {SelectedWorks} from "./pages/SelectedWorks";
 import {Services} from "./pages/Services";
+import {BrandingPage} from "./pages/BrandingPage";
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Services onVisible={() => setCurrentPage(4)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={5} speed={0.25}>
+          <BrandingPage onVisible={() => setCurrentPage(5)}/>
         </ParallaxLayer>
       </Parallax>
     </Root>
