@@ -8,6 +8,7 @@ import {WhyUs} from "./pages/WhyUs";
 import {SelectedWorks} from "./pages/SelectedWorks";
 import {Services} from "./pages/Services";
 import {BrandingPage} from "./pages/BrandingPage";
+import {GetInTouch} from "./pages/GetInTouch";
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
     <Root>
       <NavBar scroll={scroll} ref={navBarRef}/>
       <Parallax
-        pages={6}
+        pages={7}
         ref={ref}
         style={{top: "0", left: "0", height: "calc(100vh - 75px)", marginTop: "75px"}}
       >
@@ -50,6 +51,9 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={5} speed={0.25}>
           <BrandingPage onVisible={() => setCurrentPage(5)}/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={6} speed={0.25}>
+          <GetInTouch onVisible={() => setCurrentPage(6)}/>
         </ParallaxLayer>
       </Parallax>
     </Root>

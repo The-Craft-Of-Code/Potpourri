@@ -19,7 +19,7 @@ export const ListButton = styled.div`
   width: 100%;
   padding: 1em;
   border-bottom: 1px solid #000;
-  font-size: calc(0.8rem + 0.8vw);
+  font-size: calc(0.8rem + 0.5vw);
   font-family: Shocka Serif, serif;
   transition: all 0.2s ease-in-out;
   
@@ -69,7 +69,7 @@ export const MarqueeContainer = styled.div`
   animation: scroll 20s linear infinite;
   @keyframes scroll {
     from {
-      transform: translateX(30%);
+      transform: translateX(5%);
     }
     to {
       transform: translateX(-30%);
