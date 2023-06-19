@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import useElementOnScreen from "../utils/useOnScreen";
-import {Container} from "../components/root";
-import {BottomBarContainer, TestimonialsContainer} from "../components/bottombar";
+import {BottomBarContainer, CardRow, Container, Testimonial, TestimonialsContainer} from "../components/bottombar";
+import {TestimonialCard} from "../components/testimonialcard/TestimonialCard";
 
 export function Profile(props) {
 
@@ -17,7 +17,14 @@ export function Profile(props) {
   return (
     <Container>
       <TestimonialsContainer>
-        top
+        <Testimonial>
+          TESTIMONIALS
+        </Testimonial>
+        <CardRow>
+          <TestimonialCard/>
+          <TestimonialCard/>
+          <TestimonialCard/>
+        </CardRow>
       </TestimonialsContainer>
       <BottomBarContainer>
         bottom
