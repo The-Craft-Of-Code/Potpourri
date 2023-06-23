@@ -10,6 +10,7 @@ export const TestimonialsContainer = styled.div`
   padding-right: 3em;
   display: flex;
   flex: 2;
+  max-height: 70%;
   flex-direction: column;
 `
 
