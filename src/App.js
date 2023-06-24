@@ -33,7 +33,7 @@ function App() {
       <Parallax
         pages={8}
         ref={ref}
-        style={{top: "0", left: "0", height: "calc(100vh - 75px)", marginTop: "75px"}}
+        style={{top: "0", left: "0", marginTop: "75px"}}
       >
         <ParallaxLayer offset={0} speed={0.25}>
           <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll}/>
@@ -57,7 +57,7 @@ function App() {
           <GetInTouch onVisible={() => setCurrentPage(6)}/>
         </ParallaxLayer>
         <ParallaxLayer offset={7} speed={0.25}>
-          <Profile onVisible={() => setCurrentPage(7)}/>
+          <Profile onVisible={() => setCurrentPage(7)} scroll={scroll}/>
         </ParallaxLayer>
       </Parallax>
     </Root>

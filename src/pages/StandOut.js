@@ -7,7 +7,7 @@ import {
   RightContainerBottom,
   StandOutRow
 } from "../components/standout";
-import {LearnMore} from "../components/learnmore/LearnMore";
+import {LaunchButton} from "../components/learnmore/LaunchButton";
 import blurImage from "../assets/images/blur-mesh.png";
 import useElementOnScreen from "../utils/useOnScreen";
 
@@ -39,8 +39,8 @@ export function StandOut(props) {
             cohesive identity, where each thread of captivating content converges to unveil your brand’s *extrodinary*
             essence.
           </TextContent>
-          <LearnMore onClick={() => {
-          }}/>
+          <LaunchButton onClick={() => {
+          }} label={"Learn More"}/>
         </RightContainer>
       </StandOutRow>
       <StandOutRow>

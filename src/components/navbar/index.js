@@ -51,7 +51,6 @@ export const Name = styled.h1`
     cursor: pointer;
     text-shadow: 0 8px 6px rgba(0, 0, 0, 0.38);
   }
-
 `
 
 export const BlogButton = styled.button`
