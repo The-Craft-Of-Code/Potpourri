@@ -6,10 +6,13 @@ export const TestimonialCardContainer = styled.div`
   flex: 1;
   background-color: white;
   width: 100%;
+  @media (max-width: 768px) {
+    max-height: 35vh;
+    min-width: 100%;
+  }
   border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(152, 152, 152, 0.2);
   padding: 1.5em;
-  min-width: 300px;
   flex-direction: column;
   font-family: Sans-serif,serif;
 `
