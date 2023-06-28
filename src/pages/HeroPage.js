@@ -39,7 +39,7 @@ export function HeroPage(props) {
               WE ARE
             </PrimaryTitle>
             <SecondaryTitle>
-              Potputti
+              Potpourri
             </SecondaryTitle>
           </PrimaryTextContainer>
           <CenterButtonContainer>
@@ -48,7 +48,7 @@ export function HeroPage(props) {
             }}/>
           </CenterButtonContainer>
           <HeroContent>
-            We write, thing two, thing three, thing four
+              We make sure you
           </HeroContent>
           <ScrollDownContainer onClick={() => {
             props.scroll(1)

@@ -22,7 +22,7 @@ export const ReviewTitle = styled.h1`
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   margin: 0 0 0.75em;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.75rem + 1vw);
   color: ${colors.primaryColor};
 `
 

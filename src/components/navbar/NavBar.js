@@ -24,7 +24,7 @@ export const NavBar = forwardRef((props, ref) => {
       <NavBarRoot>
         <Flex1Container>
           <Name onClick={() => props.scroll(0)}>
-            Potputti
+            Potpourri
           </Name>
           <DropDownButton onClick={() => setShowDropDown(!showDropDown)}>
             {showDropDown
@@ -41,10 +41,10 @@ export const NavBar = forwardRef((props, ref) => {
             Why us?
           </LinkButton>
           <LinkButton active={currentPage === 3 ? 1 : 0} onClick={() => props.scroll(3)}>
-            Works
+            Services
           </LinkButton>
           <LinkButton active={currentPage === 4 ? 1 : 0} onClick={() => props.scroll(4)}>
-            Services
+            Idk
           </LinkButton>
           <LinkButton active={currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
             Profile
@@ -73,13 +73,13 @@ export const NavBar = forwardRef((props, ref) => {
           props.scroll(3)
           setShowDropDown(false)
         }}>
-          Works
+          Services
         </LinkButton>
         <LinkButton active={currentPage === 4 ? 1 : 0} onClick={() => {
           props.scroll(4)
           setShowDropDown(false)
         }}>
-          Services
+          Idk
         </LinkButton>
         <LinkButton active={currentPage === 5 ? 1 : 0} onClick={() => {
           props.scroll(5)

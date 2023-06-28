@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import useElementOnScreen from "../utils/useOnScreen";
-import {Container, PrimaryTitle, SecondaryTitle, TextContent} from "../components/root";
+import {Container, SecondaryTitle, TextContent} from "../components/root";
 import {
   LeftContainerBottom,
   LeftContainerTop,
@@ -25,7 +25,7 @@ export function WhyUs(props) {
       <TopContentBox>
         <TopContentContainer>
           <TopPrimaryText>
-            60+
+            75+
           </TopPrimaryText>
           <TopSecondaryText>
             clients
@@ -41,42 +41,50 @@ export function WhyUs(props) {
         </TopContentContainer>
         <TopContentContainer>
           <TopPrimaryText>
-            60+
+            20+
           </TopPrimaryText>
           <TopSecondaryText>
-            Something
+            Collaborations
           </TopSecondaryText>
         </TopContentContainer>
       </TopContentBox>
       <WhyUsRow>
         <LeftContainerTop>
-          <PrimaryTitle>
-            Some text here
-          </PrimaryTitle>
           <SecondaryTitle>
             WHY US?
           </SecondaryTitle>
         </LeftContainerTop>
         <RightContainerTop>
           <TextContent>
-            Step into the world of limitless creativity entrust us to bestow upon you an intricately woven tapestry of
-            cohesive identity, where each thread of captivating content converges to unveil your brand’s *extrodinary*
-            essence.
+            At Potpourri, we are dedicated to elevating your 
+            brand's communication to new heights. Whether it's refining your 
+            sound, honing your speaking abilities, crafting compelling written 
+            content, optimizing your digital presence, or strategizing for 
+            success, we have you covered. Our mission is to empower you with 
+            the tools and expertise needed to communicate effectively and 
+            make a lasting impact. With Potpourri by your side, you can be 
+            confident that your voice will resonate stronger than ever before.
           </TextContent>
         </RightContainerTop>
       </WhyUsRow>
       <WhyUsRow>
         <LeftContainerBottom>
           <TextContent>
-            Step into the world of limitless creativity entrust us to bestow upon you an intricately woven tapestry of
-            cohesive identity, where each thread of captivating content converges to unveil your brand’s *extrodinary*
-            essence.
+              We are a diverse team of professionals, united by our 
+              shared passion for the art of writing. With varied 
+              backgrounds, qualifications, and cultural perspectives, 
+              we bring a rich tapestry of experience to our work. What 
+              sets us apart is the fusion of our unwavering creativity 
+              and in-depth expertise in content marketing. This unique 
+              blend enables us to truly grasp the needs and desires of 
+              our clients, allowing us to consistently deliver 
+              exceptional results. Our commitment to continuous 
+              improvement drives us to refine our craft with every 
+              project, ensuring that we exceed expectations time and 
+              time again.
           </TextContent>
         </LeftContainerBottom>
         <RightContainerBottom>
-          <PrimaryTitle>
-            Some text here
-          </PrimaryTitle>
           <SecondaryTitle>
             ABOUT US
           </SecondaryTitle>

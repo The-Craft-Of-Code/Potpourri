@@ -1,87 +1,39 @@
 export const works = [
   {
-    title: "Work 1",
+    title: "Creative Writing",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+     "With our team of imaginative minds, we offer captivating content across various niches. We take the time to understand your requirements and the desired impact of the content, ensuring we strike the right chord with your target audience."
+
     ],
   },
   {
-    title: "Work 2",
+    title: "Website Writing:",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+      "When it comes to building a brand, making a memorable first impression is crucial. While you focus on other aspects of your brand launch, we take care of crafting impeccable website content that reflects your brand identity and engages your visitors.      "
     ],
   },
   {
-    title: "Work 3",
+    title: "Blog Writing",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+      "Consistently maintaining a flow of engaging blog content can be challenging. At Potpourri, we provide content marketing strategies, tailored schedules, and carefully crafted blog posts that resonate with your target audience, ensuring your blog remains active and impactful."
     ],
   },
   {
-    title: "Work 4",
+    title: "Social Media Writing",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+      "Keeping up with the ever-changing trends, lingo, and hashtags on social media can be overwhelming. We understand the struggle. Our social media content services help you say the right things and enhance your reach. We deliver engaging and clever content that captivates your audience.      "
     ],
   },
   {
-    title: "Work 5",
+    title: "SOP writing",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+      "Admissions, job applications, and processing them are tenuous jobs of their own. With a portfolio of 10+ Ivy Leagues and 100+ Admissions to top universities across the world, we carry the experience of building the right portfolio through your SOPs and LORs to ensure you get admitted to your dream colleges."
     ],
   },
   {
-    title: "Work 6",
+    title: "Resume Writing",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
+      "Did you know that recruiters typically spend just a few seconds scanning a resume? To ensure your resume stands out, we specialize in crafting attention-grabbing resumes that highlight your skills and accomplishments. Leave the resume preparation to us and focus on preparing for your interview confidently."
     ],
   },
-  {
-    title: "Work 7",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
-    ],
-  },
-  {
-    title: "Work 8",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
-    ],
-  },
-  {
-    title: "Work 9",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl."
-    ],
-  },
-  {
-    title: "Work 10",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc, nec aliquam nisl nisl nec nisl.",
-    ],
-  }
 ]

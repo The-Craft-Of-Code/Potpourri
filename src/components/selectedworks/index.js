@@ -27,7 +27,7 @@ export const WorkList = styled.div`
 
 export const WorkItem = styled.h1`
   margin: 0;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.75rem + 1vw);
   border-bottom: ${props => props.selected ? `2px solid ${colors.primaryColor}` : `1px solid ${colors.primaryColor}`};
   color: ${props => props.selected ? colors.primaryColor : null};
   padding-bottom: 0.5em;
@@ -47,14 +47,17 @@ export const SelectedWorkContainer = styled.div`
   flex: 4;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
-  overflow-y: scroll;
+  padding: 2em;
+  line-height: 1.25;
+  overflow-y: hidden;
   overflow-x: hidden;
 `
 
 export const SelectedWorkTitle = styled.h1`
   margin: 0;
-  font-size: calc(2vw + 2vmin);
+  font-size: calc(1vw + 2vmin);
   font-family: Shocka Serif, serif;
   font-weight: normal;
   padding-bottom: 0.5em;

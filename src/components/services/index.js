@@ -56,10 +56,11 @@ export const ServiceTitle = styled.h3`
 export const Content = styled.p`
   padding: 0;
   margin: 1em 0 0;
-  font-size: calc(0.6vw + .45em + 4px);
+  font-size: calc(0.6vw + .25em + 4px);
   font-style: normal;
+  line-height: 1.25;
   font-weight: 300;
-  text-align: justify;
+  text-align: left;
   font-family: Subjectivity, sans-serif;
 `
 

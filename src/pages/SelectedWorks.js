@@ -27,10 +27,10 @@ export function SelectedWorks(props) {
     <WorksContainer ref={selectedWorksRef}>
       <WorksListContainer>
         <PrimaryTitle>
-          Selected
+          Our
         </PrimaryTitle>
         <SecondaryTitle>
-          Works
+          Services
         </SecondaryTitle>
         <WorkList>
           {

@@ -54,9 +54,10 @@ export const SecondaryTitle = styled.h1`
 
 export const TextContent = styled.p`
   padding: 0;
-  font-size: calc(1vw + .45em);
+  font-size: calc(1vw + .25em);
   font-style: normal;
   font-weight: 300;
+  line-height: 1.25;
   text-align: justify;
   color: ${(props) => props.color};
   font-family: Subjectivity, serif;
