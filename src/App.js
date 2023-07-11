@@ -38,7 +38,6 @@ function App() {
       clearTimeout(timer);
       timer = setTimeout(() => {
         console.log('scrolling has stopped');
-        //get current scroll position and compare with every pageRef, scroll to closest one using scroll function
         let currentScroll = window.scrollY;
         console.log(currentScroll);
 
