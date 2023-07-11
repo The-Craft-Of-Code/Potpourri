@@ -7,7 +7,7 @@ export const works = [
     ],
   },
   {
-    title: "Website Writing:",
+    title: "Website Writing",
     description: [
       "When it comes to building a brand, making a memorable first impression is crucial. While you focus on other aspects of your brand launch, we take care of crafting impeccable website content that reflects your brand identity and engages your visitors.      "
     ],
