@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {Container, PrimaryTitle, SecondaryTitle, TextContent} from "../components/root";
 import {
   LeftContainer,
@@ -13,7 +13,7 @@ import useElementOnScreen from "../utils/useOnScreen";
 
 export function StandOut(props) {
 
-  let standOutRef = useRef(null);
+  let standOutRef = props.propRef;
   let isStandOutVisible = useElementOnScreen(standOutRef);
 
   useEffect(() => {

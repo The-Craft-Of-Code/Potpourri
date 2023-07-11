@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import useElementOnScreen from "../utils/useOnScreen";
 import {Container, SecondaryTitle, TextContent} from "../components/root";
 import {
@@ -11,7 +11,7 @@ import {
 
 export function WhyUs(props) {
 
-  let standOutRef = useRef(null);
+  let standOutRef = props.propRef;
   let isStandOutVisible = useElementOnScreen(standOutRef);
 
   useEffect(() => {

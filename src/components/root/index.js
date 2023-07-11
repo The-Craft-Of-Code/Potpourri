@@ -9,12 +9,19 @@ export const Root = styled.div`
   background-color: ${colors.backgroundColor};
 `
 
+export const ExtendedHeightWrapper = styled.div`
+  margin-top: 30px;
+  margin-bottom: 30px;
+`
+
 export const ScrollSpace = styled.div`
   margin-top: 75px;
   display: flex;
   flex: 1;
   height: max-content;
   flex-direction: column;
+  scroll-snap-type: y mandatory;
+  gap: 3em;
 `
 
 export const Container = styled.div`

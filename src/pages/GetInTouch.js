@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import useElementOnScreen from "../utils/useOnScreen";
 import {
   Container,
@@ -11,7 +11,7 @@ import {
 import {EmailBar} from "../components/getintouch/email/EmailBar";
 
 export function GetInTouch(props) {
-  let getInTouchRef = useRef(null);
+  let getInTouchRef = props.propRef;
   let isGetInTouchVisible = useElementOnScreen(getInTouchRef);
   let [error, setError] = useState(false);
   let [errorMessage, setErrorMessage] = useState("");

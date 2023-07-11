@@ -16,7 +16,7 @@ export const NavBar = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     setCurrentPage: (index) => {
       setCurrentPage(index);
-    }
+    },
   }));
 
   return (
@@ -33,21 +33,24 @@ export const NavBar = forwardRef((props, ref) => {
           </DropDownButton>
         </Flex1Container>
         <ButtonContainer>
-          <LinkButton active={(currentPage === 0 || currentPage === 1) ? 1 : 0}
+          <LinkButton active={(currentPage === 0 ? 1 : 0) || (currentPage === 1 ? 1 : 0)}
                       onClick={() => props.scroll(0)}>
             Home
           </LinkButton>
           <LinkButton active={currentPage === 2 ? 1 : 0} onClick={() => props.scroll(2)}>
             Why us?
           </LinkButton>
-          <LinkButton active={currentPage === 3 ? 1 : 0} onClick={() => props.scroll(3)}>
+          <LinkButton active={(currentPage === 3 ? 1 : 0) || (currentPage === 4 ? 1 : 0)} onClick={() => props.scroll(3)}>
             Services
-          </LinkButton>
-          <LinkButton active={currentPage === 4 ? 1 : 0} onClick={() => props.scroll(4)}>
-            Idk
           </LinkButton>
           <LinkButton active={currentPage === 5 ? 1 : 0} onClick={() => props.scroll(5)}>
             Profile
+          </LinkButton>
+          <LinkButton active={currentPage === 6 ? 1 : 0} onClick={() => props.scroll(6)}>
+            Get in touch
+          </LinkButton>
+          <LinkButton active={currentPage === 7 ? 1 : 0} onClick={() => props.scroll(7)}>
+            Testimonials
           </LinkButton>
         </ButtonContainer>
         <Flex1Container>
@@ -57,7 +60,7 @@ export const NavBar = forwardRef((props, ref) => {
         </Flex1Container>
       </NavBarRoot>
       <DropDownModal show={showDropDown ? 1 : 0}>
-        <LinkButton active={currentPage === 0 || currentPage === 1 ? 1 : 0} onClick={() => {
+        <LinkButton active={(currentPage === 0 ? 1 : 0) || (currentPage === 1 ? 1 : 0)} onClick={() => {
           props.scroll(0)
           setShowDropDown(false)
         }}>
@@ -69,23 +72,29 @@ export const NavBar = forwardRef((props, ref) => {
         }}>
           Why us?
         </LinkButton>
-        <LinkButton active={currentPage === 3 ? 1 : 0} onClick={() => {
+        <LinkButton active={(currentPage === 3 ? 1 : 0) || (currentPage === 4 ? 1 : 0)} onClick={() => {
           props.scroll(3)
           setShowDropDown(false)
         }}>
           Services
-        </LinkButton>
-        <LinkButton active={currentPage === 4 ? 1 : 0} onClick={() => {
-          props.scroll(4)
-          setShowDropDown(false)
-        }}>
-          Idk
         </LinkButton>
         <LinkButton active={currentPage === 5 ? 1 : 0} onClick={() => {
           props.scroll(5)
           setShowDropDown(false)
         }}>
           Profile
+        </LinkButton>
+        <LinkButton active={currentPage === 6 ? 1 : 0} onClick={() => {
+          props.scroll(6)
+          setShowDropDown(false)
+        }}>
+          Get in touch
+        </LinkButton>
+        <LinkButton active={currentPage === 7 ? 1 : 0} onClick={() => {
+          props.scroll(7)
+          setShowDropDown(false)
+        }}>
+          Testimonials
         </LinkButton>
         <BlogButton>
           Blog

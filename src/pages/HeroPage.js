@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import {
   CenterButtonContainer,
   HeroContent,
@@ -17,7 +17,7 @@ import {BsArrowBarDown} from "react-icons/bs";
 
 export function HeroPage(props) {
 
-  let heroPageRef = useRef(null);
+  let heroPageRef = props.propRef;
   let isHeroPageVisible = useElementOnScreen(heroPageRef);
 
   useEffect(() => {

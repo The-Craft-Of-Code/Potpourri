@@ -40,13 +40,13 @@ export function BottomBar(props) {
             Why us?
           </LinkButton>
           <LinkButton onClick={() => props.scroll(3)}>
-            Works
-          </LinkButton>
-          <LinkButton onClick={() => props.scroll(4)}>
             Services
           </LinkButton>
           <LinkButton onClick={() => props.scroll(5)}>
             Profile
+          </LinkButton>
+          <LinkButton onClick={() => props.scroll(6)}>
+            Get in touch
           </LinkButton>
         </NavBarContainer>
         <SocialsContainerWrapper>

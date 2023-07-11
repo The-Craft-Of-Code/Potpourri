@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import {
   SelectedWorkContainer, SelectedWorkTitle,
   WorkItem,
@@ -12,7 +12,7 @@ import {works} from "../components/selectedworks/data";
 
 export function SelectedWorks(props) {
 
-  let selectedWorksRef = useRef(null);
+  let selectedWorksRef = props.propRef;
   let isSelectedWorksVisible = useElementOnScreen(selectedWorksRef);
 
   let [selectedWork, setSelectedWork] = React.useState(works[0]);

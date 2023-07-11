@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect} from "react";
 import {Container, PrimaryTitle, SecondaryTitle} from "../components/root";
 import useElementOnScreen from "../utils/useOnScreen";
 import {
@@ -13,7 +13,7 @@ import blurImage from "../assets/images/blur-mesh.png";
 
 export const BrandingPage = (props) => {
 
-  let brandingRef = useRef(null);
+  let brandingRef = props.propRef;
   let isBrandingVisible = useElementOnScreen(brandingRef);
 
   useEffect(() => {

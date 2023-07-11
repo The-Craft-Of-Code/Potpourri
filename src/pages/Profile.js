@@ -1,31 +1,16 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import useElementOnScreen from "../utils/useOnScreen";
 import {
-  AppName,
-  BottomBarCenter,
-  BottomBarContainer,
-  BottomBarLeft,
-  BottomBarRight,
   CardRow,
-  ContactContainer,
-  Container, EmailAddress,
-  NavBarContainer, NewsLetterCaption,
-  NewsLetterContainer, NewsLetterSignUp, NewsLetterTitle,
-  PrimaryContactText, PrimaryPhoneNumber,
-  SocialAnchor,
-  SocialsContainer,
-  SocialsContainerWrapper,
+  Container,
   Testimonial,
   TestimonialsContainer
 } from "../components/bottombar";
 import {TestimonialCard} from "../components/testimonialcard/TestimonialCard";
-import {LinkButton} from "../components/navbar";
-import {AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillMediumSquare, AiOutlineArrowsAlt} from "react-icons/ai";
-import {LaunchButton} from "../components/learnmore/LaunchButton";
 
 export function Profile(props) {
 
-  let profilePageRef = useRef(null);
+  let profilePageRef = props.propRef;
   let isProfilePageVisible = useElementOnScreen(profilePageRef);
 
   let testimonialData = [
@@ -74,7 +59,7 @@ export function Profile(props) {
   }, [isProfilePageVisible, props]);
 
   return (
-    <Container>
+    <Container ref={profilePageRef}>
       <TestimonialsContainer>
         <Testimonial>
           TESTIMONIALS

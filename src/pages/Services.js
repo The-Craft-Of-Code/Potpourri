@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import useElementOnScreen from "../utils/useOnScreen";
 import {
   Container,
@@ -16,7 +16,7 @@ import group28 from "../assets/images/service-vectors/Group28.png";
 
 export function Services(props) {
 
-  let servicesRef = useRef(null);
+  let servicesRef = props.propRef;
   let isServiceVisible = useElementOnScreen(servicesRef);
 
   useEffect(() => {
