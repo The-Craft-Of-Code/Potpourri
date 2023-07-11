@@ -50,6 +50,10 @@ function App() {
           }
         }
 
+        if (closest === pageRef.length - 1) {
+          return;
+        }
+
         scroll(closest)
       }, 150);
     };
@@ -60,7 +64,7 @@ function App() {
       clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pageRef, scroll]);
 
   const setCurrentPage = (page) => {
     if (navBarRef.current)
@@ -72,21 +76,11 @@ function App() {
       <NavBar scroll={scroll} ref={navBarRef}/>
       <ScrollSpace>
         <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll} propRef={pageRef[0]}/>
-        <ExtendedHeightWrapper>
-          <StandOut onVisible={() => setCurrentPage(1)} propRef={pageRef[1]}/>
-        </ExtendedHeightWrapper>
-        <ExtendedHeightWrapper>
-          <WhyUs onVisible={() => setCurrentPage(2)} propRef={pageRef[2]}/>
-        </ExtendedHeightWrapper>
-        <ExtendedHeightWrapper>
-          <SelectedWorks onVisible={() => setCurrentPage(3)} propRef={pageRef[3]}/>
-        </ExtendedHeightWrapper>
-        <ExtendedHeightWrapper>
-          <Services onVisible={() => setCurrentPage(4)} propRef={pageRef[4]}/>
-        </ExtendedHeightWrapper>
-        <ExtendedHeightWrapper>
-          <BrandingPage onVisible={() => setCurrentPage(5)} propRef={pageRef[5]}/>
-        </ExtendedHeightWrapper>
+        <StandOut onVisible={() => setCurrentPage(1)} propRef={pageRef[1]}/>
+        <WhyUs onVisible={() => setCurrentPage(2)} propRef={pageRef[2]}/>
+        <SelectedWorks onVisible={() => setCurrentPage(3)} propRef={pageRef[3]}/>
+        <Services onVisible={() => setCurrentPage(4)} propRef={pageRef[4]}/>
+        <BrandingPage onVisible={() => setCurrentPage(5)} propRef={pageRef[5]}/>
         <GetInTouch onVisible={() => setCurrentPage(6)} propRef={pageRef[6]}/>
         <Profile onVisible={() => setCurrentPage(7)} scroll={scroll} propRef={pageRef[7]}/>
         <BottomBar scroll={scroll}/>

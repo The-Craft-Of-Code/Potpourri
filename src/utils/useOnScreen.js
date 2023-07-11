@@ -4,7 +4,13 @@ export default function useElementOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false)
 
   const observer = useMemo(() => new IntersectionObserver(
-    ([entry]) => setIntersecting(entry.isIntersecting)
+    ([entry]) => {
+      setIntersecting(entry.isIntersecting && entry.intersectionRatio >= 0.5)
+    },
+    {
+      rootMargin: "0px",
+      threshold: 0.9
+    }
   ), [])
 
   useEffect(() => {

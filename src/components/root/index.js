@@ -9,11 +9,6 @@ export const Root = styled.div`
   background-color: ${colors.backgroundColor};
 `
 
-export const ExtendedHeightWrapper = styled.div`
-  margin-top: 40px;
-  margin-bottom: 40px;
-`
-
 export const ScrollSpace = styled.div`
   margin-top: 75px;
   display: flex;
