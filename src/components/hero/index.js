@@ -82,6 +82,7 @@ export const ScrollDownContainer = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+    z-index: 100;
   }
 `
 
