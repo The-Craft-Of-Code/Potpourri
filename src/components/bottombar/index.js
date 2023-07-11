@@ -12,7 +12,7 @@ export const TestimonialsContainer = styled.div`
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
-  height: 70%;
+  height: 100%;
   flex: 2;
   flex-direction: column;
 `
@@ -181,7 +181,6 @@ export const CardRow = styled.div`
   gap: 1em;
   flex: 1;
   height: 100%;
-  padding: 0 0 3em;
   overflow: scroll;
   
   @media (max-width: 768px) {

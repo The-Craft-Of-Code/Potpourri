@@ -5,9 +5,8 @@ export const TestimonialCardContainer = styled.div`
   display: flex;
   flex: 1;
   background-color: white;
-  width: 100%;
+  min-width: 30vw;
   @media (max-width: 768px) {
-    max-height: 35vh;
     min-width: 100%;
   }
   border-radius: 15px;
