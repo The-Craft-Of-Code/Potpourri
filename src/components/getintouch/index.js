@@ -4,7 +4,7 @@ import {colors} from "../../colors";
 export const Container = styled.div`
   padding: 3.5em;
   background-color: ${colors.primaryColor};
-  height: 100%;
+  height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
 `

@@ -8,6 +8,7 @@ export const RowContainerWrapper = styled.div`
   height: 100%;
   margin-top: 3em;
   justify-content: center;
+  align-items: center;
 `
 
 export const SecondaryTitle = styled(DefaultSecondaryTitle)`
@@ -43,6 +44,10 @@ export const ServiceVector = styled.img`
   object-fit: contain;
   align-self: start;
   margin-top: 0.5em;
+  
+  @media (max-width: 768px) {
+    height: calc(30px + 1.5vw);
+  }
 `
 
 export const ServiceTitle = styled.h3`
@@ -62,6 +67,10 @@ export const Content = styled.p`
   font-weight: 300;
   text-align: left;
   font-family: Subjectivity, sans-serif;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1em;
+  }
 `
 
 

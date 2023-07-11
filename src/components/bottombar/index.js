@@ -3,7 +3,9 @@ import {colors} from "../../colors";
 import {Container as RootContainer} from "../root";
 import {Name} from "../navbar";
 
-export const Container = styled(RootContainer)``
+export const Container = styled(RootContainer)`
+  height: calc(70vh - 75px);
+`
 
 export const TestimonialsContainer = styled.div`
   padding-top: 4em;
@@ -16,6 +18,7 @@ export const TestimonialsContainer = styled.div`
 `
 
 export const BottomBarContainer = styled.div`
+  min-height: 30vh;
   display: flex;
   flex: 1;
   flex-direction: row;

@@ -78,8 +78,12 @@ export const WhyUsRow = styled.div`
   padding: 3em;
   flex: 1;
 
-  &:nth-child(1) {
+  &:nth-child(2) {
     padding-bottom: 0;
+  }
+  
+  &:nth-child(3) {
+    padding-top: 0;
   }
   
   @media (max-width: 768px) {

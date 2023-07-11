@@ -9,11 +9,11 @@ export const Root = styled.div`
   background-color: ${colors.backgroundColor};
 `
 
-
 export const ScrollSpace = styled.div`
   margin-top: 75px;
   display: flex;
   flex: 1;
+  height: max-content;
   flex-direction: column;
 `
 
@@ -21,7 +21,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 75px);
 `
 
 export const PrimaryTitle = styled.h3`
@@ -33,7 +33,7 @@ export const PrimaryTitle = styled.h3`
   color: ${colors.primaryColor};
   
   @media (max-width: 768px) {
-    font-size: calc(1vw + 2vmin);
+    font-size: calc(3vw + 2vmin);
   }
   
 `
@@ -47,7 +47,7 @@ export const SecondaryTitle = styled.h1`
   font-weight: 500;
 
   @media (max-width: 768px) {
-    font-size: calc(2vw + 3vmin);
+    font-size: calc(4vw + 3vmin);
   }
 `
 
