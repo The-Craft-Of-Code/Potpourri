@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {NavBar} from "./components/navbar/NavBar";
 import {ExtendedHeightWrapper, Root, ScrollSpace} from "./components/root";
 import {HeroPage} from "./pages/HeroPage";
@@ -21,6 +21,8 @@ function App() {
     let ref = pageRef[to];
     if (ref && ref.current) {
 
+      console.log(ref.current.offsetTop - 75)
+
       window.scrollTo({
         top: ref.current.offsetTop - 75,
         behavior: "smooth"
@@ -28,6 +30,43 @@ function App() {
 
     }
   };
+
+  useEffect(() => {
+    let timer = null;
+
+    const handleScroll = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        console.log('scrolling has stopped');
+        //get current scroll position and compare with every pageRef, scroll to closest one using scroll function
+        let currentScroll = window.scrollY;
+        console.log(currentScroll);
+
+        let closest = 0;
+        let closestDistance = 100000
+        for (let i = 0; i < pageRef.length; i++) {
+          let ref = pageRef[i];
+          if (ref && ref.current) {
+            let distance = Math.abs(ref.current.offsetTop - currentScroll);
+            if (distance < closestDistance) {
+              closest = i;
+              closestDistance = distance;
+            }
+          }
+        }
+
+        scroll(closest)
+
+      }, 150);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const setCurrentPage = (page) => {
     if (navBarRef.current)

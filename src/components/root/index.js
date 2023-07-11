@@ -20,7 +20,6 @@ export const ScrollSpace = styled.div`
   flex: 1;
   height: max-content;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
   gap: 3em;
 `
 

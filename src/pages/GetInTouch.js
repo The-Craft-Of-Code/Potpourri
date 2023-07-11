@@ -51,7 +51,7 @@ export function GetInTouch(props) {
         </GraphicContentContainer>
       </Container>
       <ErrorContainer>
-        <ErrorContainerInner show={error}>
+        <ErrorContainerInner show={error ? 1 : 0}>
           {errorMessage}
         </ErrorContainerInner>
       </ErrorContainer>
