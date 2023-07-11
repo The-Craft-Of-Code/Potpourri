@@ -21,8 +21,6 @@ function App() {
     let ref = pageRef[to];
     if (ref && ref.current) {
 
-      console.log(ref.current.offsetTop - 75)
-
       window.scrollTo({
         top: ref.current.offsetTop - 75,
         behavior: "smooth"
@@ -36,11 +34,9 @@ function App() {
 
     const handleScroll = () => {
       clearTimeout(timer);
-      timer = setTimeout(() => {
-        console.log('scrolling has stopped');
-        let currentScroll = window.scrollY;
-        console.log(currentScroll);
 
+      timer = setTimeout(() => {
+        let currentScroll = window.scrollY;
         let closest = 0;
         let closestDistance = 100000
         for (let i = 0; i < pageRef.length; i++) {
@@ -55,7 +51,6 @@ function App() {
         }
 
         scroll(closest)
-
       }, 150);
     };
 

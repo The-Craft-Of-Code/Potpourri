@@ -10,8 +10,8 @@ export const Root = styled.div`
 `
 
 export const ExtendedHeightWrapper = styled.div`
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 `
 
 export const ScrollSpace = styled.div`
