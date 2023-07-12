@@ -48,7 +48,7 @@ export function HeroPage(props) {
             }}/>
           </CenterButtonContainer>
           <HeroContent>
-              We make sure you
+              We make sure you get the best of the best.
           </HeroContent>
           <ScrollDownContainer onClick={() => {
             props.scroll(1)

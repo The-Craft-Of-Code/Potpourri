@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {colors} from "../../colors";
 
 export const Container = styled.div`
   width: 100vw;
@@ -39,7 +40,7 @@ export const SubtitleContainer = styled.div`
   font-family: Subjectivity, serif;
   width: 30%;
   align-self: flex-end;
-  font-weight: 600;
+  font-weight: bold;
   text-align: end;
   flex: 1;
   
@@ -51,7 +52,8 @@ export const SubtitleContainer = styled.div`
 export const TextContent = styled.p`
   font-size: calc(1vw + 10px);
   font-family: Subjectivity, serif;
-  font-weight: 300;
+  font-weight: lighter;
+  color: ${colors.secondaryTextColor};
   text-align: end;
   max-width: 70%;
   align-self: flex-end;

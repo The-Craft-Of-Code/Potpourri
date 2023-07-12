@@ -1,27 +1,40 @@
+@font-face {
+    font-family: 'Brant';
+    src: local('Brant'), url(./fonts/Brant.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Shocka Serif';
+    src: local('ShockaSerif'), url(./fonts/ShockaSerif-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Subjectivity';
+    src: local('Subjectivity'), url(./fonts/Subjectivity-Regular.otf) format('opentype');
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-size: calc(0.7em + 0.5vw);
-  width: 100vw;
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    padding: 0;
+    font-size: calc(0.7em + 0.5vw);
+    width: 100vw;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #F7F6F2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F7F6F2;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
-  scroll-snap-align: start;
+    box-sizing: border-box;
+    scroll-snap-align: start;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

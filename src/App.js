@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {NavBar} from "./components/navbar/NavBar";
-import {ExtendedHeightWrapper, Root, ScrollSpace} from "./components/root";
+import {Root, ScrollSpace} from "./components/root";
 import {HeroPage} from "./pages/HeroPage";
 import {StandOut} from "./pages/StandOut";
 import {WhyUs} from "./pages/WhyUs";
@@ -10,6 +10,7 @@ import {BrandingPage} from "./pages/BrandingPage";
 import {GetInTouch} from "./pages/GetInTouch";
 import {Profile} from "./pages/Profile";
 import {BottomBar} from "./pages/BottomBar";
+import {AboutMe} from "./pages/AboutMe";
 
 function App() {
 
@@ -64,7 +65,7 @@ function App() {
       clearTimeout(timer);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [pageRef, scroll]);
+  });
 
   const setCurrentPage = (page) => {
     if (navBarRef.current)
@@ -75,6 +76,7 @@ function App() {
     <Root>
       <NavBar scroll={scroll} ref={navBarRef}/>
       <ScrollSpace>
+        <AboutMe/>
         <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll} propRef={pageRef[0]}/>
         <StandOut onVisible={() => setCurrentPage(1)} propRef={pageRef[1]}/>
         <WhyUs onVisible={() => setCurrentPage(2)} propRef={pageRef[2]}/>
