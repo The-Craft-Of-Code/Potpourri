@@ -8,7 +8,7 @@ import {
   TextContainer
 } from "./index";
 
-import StackImage from "../../assets/images/profile-icon.svg";
+import StackImage from "../../assets/svg/profile-icon.svg";
 
 export function TestimonialCard(props) {
 

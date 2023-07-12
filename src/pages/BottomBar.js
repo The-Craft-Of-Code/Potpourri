@@ -15,7 +15,7 @@ export function BottomBar(props) {
     <BottomBarContainer>
       <BottomBarLeft>
         <AppName onClick={() => props.scroll(0)}>
-          Potputti
+          Potpourri
         </AppName>
         <ContactContainer>
           <PrimaryContactText>
