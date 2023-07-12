@@ -76,7 +76,6 @@ function App() {
     <Root>
       <NavBar scroll={scroll} ref={navBarRef}/>
       <ScrollSpace>
-        <AboutMe/>
         <HeroPage onVisible={() => setCurrentPage(0)} scroll={scroll} propRef={pageRef[0]}/>
         <StandOut onVisible={() => setCurrentPage(1)} propRef={pageRef[1]}/>
         <WhyUs onVisible={() => setCurrentPage(2)} propRef={pageRef[2]}/>
