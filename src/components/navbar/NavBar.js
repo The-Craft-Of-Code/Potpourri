@@ -3,10 +3,18 @@ import {
   BlogButton,
   ButtonContainer,
   Name,
-  NavBarRoot, Flex1Container, DropDownButton, DropDownModal, NavBarContainer, LinkButton, RemainingSpace,
+  NavBarRoot,
+  Flex1Container,
+  DropDownButton,
+  DropDownModal,
+  NavBarContainer,
+  LinkButton,
+  RemainingSpace,
+  RouterLinkButton,
 } from "./index";
 import {BiMenuAltRight} from "react-icons/bi";
 import {AiOutlineClose} from "react-icons/ai";
+import {Link} from "react-router-dom";
 
 export const NavBar = forwardRef((props, ref) => {
 
@@ -52,6 +60,9 @@ export const NavBar = forwardRef((props, ref) => {
           <LinkButton active={currentPage === 7 ? 1 : 0} onClick={() => props.scroll(7)}>
             Testimonials
           </LinkButton>
+          <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
+            About Me
+          </RouterLinkButton>
         </ButtonContainer>
         <Flex1Container>
           <BlogButton>
@@ -96,6 +107,9 @@ export const NavBar = forwardRef((props, ref) => {
         }}>
           Testimonials
         </LinkButton>
+        <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
+          About Me
+        </RouterLinkButton>
         <BlogButton>
           Blog
         </BlogButton>

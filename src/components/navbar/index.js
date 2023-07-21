@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {colors} from "../../colors";
+import {Link} from "react-router-dom";
 
 export const Flex1Container = styled.div`
   display: flex;
@@ -20,14 +21,17 @@ export const ButtonContainer = styled.div`
   border-right: 1px solid #000000;
   font-family: Subjectivity, sans-serif;
 `
+
 export const LinkButton = styled.div`
-  font-size: calc(0.65em + 0.4vw);
+  font-size: calc(0.6em + 0.4vw);
   transition: all 0.2s ease-in-out;
   color: ${props => props.active ? colors.primaryColor : colors.black};
   scale: ${props => props.active ? 1.2 : 1};
+  font-family: Subjectivity, sans-serif;
 
   &:hover {
     cursor: pointer;
+    scale: 1.2;
   }
 
   @media (max-width: 768px) {
@@ -38,7 +42,28 @@ export const LinkButton = styled.div`
       margin-bottom: 0;
     }
   }
+`
 
+export const RouterLinkButton = styled(Link)`
+  font-size: calc(0.6em + 0.4vw);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+  font-family: Subjectivity, sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.75em;
+    font-size: calc(0.8em + 0.8vw);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `
 
 export const Name = styled.h1`

@@ -10,7 +10,6 @@ import {BrandingPage} from "./pages/BrandingPage";
 import {GetInTouch} from "./pages/GetInTouch";
 import {Profile} from "./pages/Profile";
 import {BottomBar} from "./pages/BottomBar";
-import {AboutMe} from "./pages/AboutMe";
 
 function App() {
 
