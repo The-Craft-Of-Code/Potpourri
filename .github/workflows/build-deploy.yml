@@ -35,6 +35,7 @@ jobs:
           path: ./build
 
   deploy:
+    permissions: write-all
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
