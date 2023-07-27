@@ -14,7 +14,6 @@ import {
 } from "./index";
 import {BiMenuAltRight} from "react-icons/bi";
 import {AiOutlineClose} from "react-icons/ai";
-import {Link} from "react-router-dom";
 
 export const NavBar = forwardRef((props, ref) => {
 
