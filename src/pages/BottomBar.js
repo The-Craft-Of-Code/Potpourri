@@ -5,7 +5,7 @@ import {
   ContactContainer, EmailAddress, NavBarContainer, NewsLetterCaption, NewsLetterContainer, NewsLetterTitle,
   PrimaryContactText, PrimaryPhoneNumber, SocialAnchor, SocialsContainer, SocialsContainerWrapper
 } from "../components/bottombar";
-import {LinkButton} from "../components/navbar";
+import {LinkButton, RouterLinkButton} from "../components/navbar";
 import {AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillMediumSquare} from "react-icons/ai";
 import {LaunchButton} from "../components/learnmore/LaunchButton";
 import React from "react";
@@ -48,6 +48,9 @@ export function BottomBar(props) {
           <LinkButton onClick={() => props.scroll(6)}>
             Get in touch
           </LinkButton>
+          <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
+            About Me
+          </RouterLinkButton>
         </NavBarContainer>
         <SocialsContainerWrapper>
           <SocialsContainer>
