@@ -80,7 +80,7 @@ function App() {
         <StandOut onVisible={() => setCurrentPage(1)} propRef={pageRef[1]}/>
         <WhyUs onVisible={() => setCurrentPage(2)} propRef={pageRef[2]}/>
         <SelectedWorks onVisible={() => setCurrentPage(3)} propRef={pageRef[3]}/>
-        <Services onVisible={() => setCurrentPage(4)} propRef={pageRef[4]}/>
+        {/* <Services onVisible={() => setCurrentPage(4)} propRef={pageRef[4]}/> */}
         <BrandingPage onVisible={() => setCurrentPage(5)} propRef={pageRef[5]}/>
         <GetInTouch onVisible={() => setCurrentPage(6)} propRef={pageRef[6]}/>
         <Profile onVisible={() => setCurrentPage(7)} scroll={scroll} propRef={pageRef[7]}/>

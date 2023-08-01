@@ -16,7 +16,7 @@ export const RightContainerTop = styled.div`
 
 export const LeftContainerBottom = styled.div`
   display: flex;
-  flex: 2;
+  flex: 4;
 `
 
 export const RightContainerBottom = styled.div`

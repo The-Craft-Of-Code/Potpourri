@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, {useEffect} from "react";
 import {Container, PrimaryTitle, SecondaryTitle} from "../components/root";
 import useElementOnScreen from "../utils/useOnScreen";
@@ -26,20 +27,20 @@ export const BrandingPage = (props) => {
 
   return (
     <Container ref={brandingRef}>
-      <RowContainer>
-        <LeftImage src={blurImage}/>
-        <RightContainer>
-          <ListButton>
-            How can we help make an impact?
-          </ListButton>
-          <ListButton>
-            How to get in touch with us?
-          </ListButton>
-          <ListButton>
-            How can you be sure?
-          </ListButton>
-        </RightContainer>
-      </RowContainer>
+    {/* //   <RowContainer>
+    //     <LeftImage src={blurImage}/>
+    //     <RightContainer>
+    //       <ListButton>
+    //         How can we help make an impact?
+    //       </ListButton>
+    //       <ListButton>
+    //         How to get in touch with us?
+    //       </ListButton>
+    //       <ListButton>
+    //         How can you be sure?
+    //       </ListButton>
+    //     </RightContainer>
+    //   </RowContainer> */}
       <BrandingContainer>
         <TitleContainer>
           <PrimaryTitle>

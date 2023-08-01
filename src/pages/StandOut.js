@@ -47,8 +47,8 @@ export function StandOut(props) {
           expertise.
 
           </TextContent>
-          <LaunchButton onClick={() => {
-          }} label={"Learn More"}/>
+          {/* <LaunchButton onClick={() => {
+          }} label={"Learn More"}/> */}
         </RightContainer>
       </StandOutRow>
       <StandOutRow>
