@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+env:
+  - name: SSL_CERT_DIR
+    value: "/etc/ssl/certs"
+
 jobs:
   build:
     name: Build
