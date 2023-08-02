@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  SSL_CERT_DIR: /etc/ssl/certs
+
 jobs:
   build:
     name: Build
@@ -44,9 +47,6 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v2
-        env:
-          - name: SSL_CERT_DIR
-            value: "/etc/ssl/certs"
         with:
           name: production-files
           path: ./build
