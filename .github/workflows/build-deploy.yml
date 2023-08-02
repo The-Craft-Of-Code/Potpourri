@@ -11,12 +11,15 @@ on:
 env:
   SSL_CERT_DIR: /etc/ssl/certs
   NODE_TLS_REJECT_UNAUTHORIZED: 0
-  url: ${{ steps.step_name.outputs.url_output }}
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+
+    environment:
+      name: test_environment
+      url: ${{ steps.step_name.outputs.url_output }}
 
     steps:
       - name: Checkout code
