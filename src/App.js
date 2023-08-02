@@ -5,11 +5,13 @@ import {HeroPage} from "./pages/HeroPage";
 import {StandOut} from "./pages/StandOut";
 import {WhyUs} from "./pages/WhyUs";
 import {SelectedWorks} from "./pages/SelectedWorks";
-import {Services} from "./pages/Services";
 import {BrandingPage} from "./pages/BrandingPage";
 import {GetInTouch} from "./pages/GetInTouch";
 import {Profile} from "./pages/Profile";
 import {BottomBar} from "./pages/BottomBar";
+
+//Use imports when enabling Services page
+//import {Services} from "./pages/Services";
 
 function App() {
 

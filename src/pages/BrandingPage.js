@@ -4,13 +4,20 @@ import {Container, PrimaryTitle, SecondaryTitle} from "../components/root";
 import useElementOnScreen from "../utils/useOnScreen";
 import {
   BrandingContainer, BrandingText, BrandListContainer,
-  LeftImage,
-  ListButton, MarqueeContainer,
-  RightContainer,
-  RowContainer,
+  MarqueeContainer,
   TitleContainer
 } from "../components/branding";
-import blurImage from "../assets/images/blur-mesh.png";
+
+//Use imports when enabling question container
+//import {
+//   BrandingContainer, BrandingText, BrandListContainer,
+//   LeftImage,
+//   ListButton, MarqueeContainer,
+//   RightContainer,
+//   RowContainer,
+//   TitleContainer
+// } from "../components/branding";
+// import blurImage from "../assets/images/blur-mesh.png";
 
 export const BrandingPage = (props) => {
 

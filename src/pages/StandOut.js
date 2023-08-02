@@ -7,9 +7,11 @@ import {
   RightContainerBottom,
   StandOutRow
 } from "../components/standout";
-import {LaunchButton} from "../components/learnmore/LaunchButton";
 import blurImage from "../assets/images/blur-mesh.png";
 import useElementOnScreen from "../utils/useOnScreen";
+
+//Use when
+//import {LaunchButton} from "../components/learnmore/LaunchButton";
 
 export function StandOut(props) {
 
