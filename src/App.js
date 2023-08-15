@@ -33,6 +33,7 @@ function App() {
 
   useEffect(() => {
     let timer = null;
+    let prevScrollPage = -1;
 
     const handleScroll = () => {
       clearTimeout(timer);
@@ -52,11 +53,13 @@ function App() {
           }
         }
 
-        if (closest === pageRef.length - 1) {
+        if (prevScrollPage === closest) {
           return;
         }
 
         scroll(closest)
+        prevScrollPage = closest;
+
       }, 150);
     };
 
