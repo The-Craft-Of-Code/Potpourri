@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d21230a.css",
-    "main.js": "/static/js/main.8261a834.js",
-    "static/js/787.f5d8c0b8.chunk.js": "/static/js/787.f5d8c0b8.chunk.js",
-    "static/media/snigdha.svg": "/static/media/snigdha.f1a31cff9c85a6d609ef8bead6502265.svg",
-    "static/media/blur-mesh.png": "/static/media/blur-mesh.a05a0a9d634f25229609.png",
-    "static/media/hero.png": "/static/media/hero.844e374b0c76bd75e1f0.png",
-    "static/media/Brant.otf": "/static/media/Brant.abfe2c9394eaf03bf566.otf",
-    "static/media/ShockaSerif-Bold.otf": "/static/media/ShockaSerif-Bold.db2be8b75c374966d623.otf",
-    "static/media/Subjectivity-Regular.otf": "/static/media/Subjectivity-Regular.7c8cc70e8aad0dec3995.otf",
-    "index.html": "/index.html",
-    "static/media/profile-icon.svg": "/static/media/profile-icon.f52e43888fa76ec9f3f6694a5a261f3f.svg",
-    "main.3d21230a.css.map": "/static/css/main.3d21230a.css.map",
-    "main.8261a834.js.map": "/static/js/main.8261a834.js.map",
-    "787.f5d8c0b8.chunk.js.map": "/static/js/787.f5d8c0b8.chunk.js.map"
+    "main.css": "/Potpourri/static/css/main.649df003.css",
+    "main.js": "/Potpourri/static/js/main.2bb86327.js",
+    "static/js/787.f5d8c0b8.chunk.js": "/Potpourri/static/js/787.f5d8c0b8.chunk.js",
+    "static/media/snigdha.svg": "/Potpourri/static/media/snigdha.f1a31cff9c85a6d609ef8bead6502265.svg",
+    "static/media/blur-mesh.png": "/Potpourri/static/media/blur-mesh.a05a0a9d634f25229609.png",
+    "static/media/hero.png": "/Potpourri/static/media/hero.844e374b0c76bd75e1f0.png",
+    "static/media/Brant.otf": "/Potpourri/static/media/Brant.abfe2c9394eaf03bf566.otf",
+    "static/media/ShockaSerif-Bold.otf": "/Potpourri/static/media/ShockaSerif-Bold.db2be8b75c374966d623.otf",
+    "static/media/Subjectivity-Regular.otf": "/Potpourri/static/media/Subjectivity-Regular.7c8cc70e8aad0dec3995.otf",
+    "index.html": "/Potpourri/index.html",
+    "static/media/profile-icon.svg": "/Potpourri/static/media/profile-icon.f52e43888fa76ec9f3f6694a5a261f3f.svg",
+    "main.649df003.css.map": "/Potpourri/static/css/main.649df003.css.map",
+    "main.2bb86327.js.map": "/Potpourri/static/js/main.2bb86327.js.map",
+    "787.f5d8c0b8.chunk.js.map": "/Potpourri/static/js/787.f5d8c0b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d21230a.css",
-    "static/js/main.8261a834.js"
+    "static/css/main.649df003.css",
+    "static/js/main.2bb86327.js"
   ]
 }
