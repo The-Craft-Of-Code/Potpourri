@@ -3,7 +3,7 @@ import {colors} from "../../colors";
 
 export const WorksContainer = styled.div`
   width: 100%;
-  height: calc(100vh - 75px);
+  min-height: calc(100vh);
   padding: 3em;
   display: flex;
   flex-direction: row;

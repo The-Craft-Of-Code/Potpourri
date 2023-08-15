@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 import {colors} from "../../colors";
-import {Container as RootContainer} from "../root";
 import {Name} from "../navbar";
 
-export const Container = styled(RootContainer)`
-  height: calc(70vh - 75px);
+export const Container = styled.div`
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-height: 600px) {
+    height: 500px;
+  }
 `
 
 export const TestimonialsContainer = styled.div`
@@ -18,7 +24,7 @@ export const TestimonialsContainer = styled.div`
 `
 
 export const BottomBarContainer = styled.div`
-  min-height: 30vh;
+  height: min-content;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -28,7 +34,6 @@ export const BottomBarContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    overflow-y: scroll;
   }
 `
 
@@ -62,7 +67,7 @@ export const ContactContainer = styled.div`
   padding: 1em 2em;
   gap: 0.7em;
   border-top: 1px solid black;
-  
+
   @media (max-width: 768px) {
     border-bottom: 1px solid black;
   }
@@ -79,8 +84,8 @@ export const PrimaryContactText = styled.p`
 export const PrimaryPhoneNumber = styled.a`
   font-size: calc(0.4em + 0.1vw + 6px);
   font-family: Brant, sans-serif;
-  margin: 0;
   padding: 0;
+  margin: 3em 0 0;
   color: #454545;
 `
 
@@ -116,7 +121,7 @@ export const BottomBarCenter = styled.div`
   border-right: 1px solid black;
   display: flex;
   flex-direction: column;
-  
+
   @media (max-width: 768px) {
     border-left: none;
     border-right: none;
@@ -132,7 +137,7 @@ export const NavBarContainer = styled.div`
   padding: 1em 2em;
   flex: 2;
   border-bottom: 1px solid black;
-  
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -157,6 +162,7 @@ export const SocialsContainer = styled.div`
 export const SocialAnchor = styled.a`
   font-size: 1.5em;
   transition: all 0.2s ease-in-out;
+
   &:hover {
     scale: 1.25;
     cursor: pointer;
@@ -182,7 +188,7 @@ export const CardRow = styled.div`
   flex: 1;
   height: 100%;
   overflow: scroll;
-  
+  margin-bottom: 1em;
   @media (max-width: 768px) {
     flex-direction: row;
   }

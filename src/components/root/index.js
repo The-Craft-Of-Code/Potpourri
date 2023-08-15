@@ -15,14 +15,14 @@ export const ScrollSpace = styled.div`
   flex: 1;
   height: max-content;
   flex-direction: column;
-  gap: 3em;
 `
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 75px);
+  height: 100%;
+  min-height: 100vh;
 `
 
 export const PrimaryTitle = styled.h3`
