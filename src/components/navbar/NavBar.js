@@ -60,7 +60,7 @@ export const NavBar = forwardRef((props, ref) => {
             Testimonials
           </LinkButton>
           <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
-            About Me
+            About Us
           </RouterLinkButton>
         </ButtonContainer>
         <Flex1Container>
@@ -107,7 +107,7 @@ export const NavBar = forwardRef((props, ref) => {
           Testimonials
         </LinkButton>
         <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
-          About Me
+          About Us
         </RouterLinkButton>
         <BlogButton>
           Blog

@@ -36,13 +36,15 @@ export const ContentContainer = styled.div`
 `
 
 export const PictureContainer = styled.div`
-  width: 15%;
   margin-right: 0.75em;
+  margin-bottom: 0.75em;
+  margin-top: 0.25em;
+  height: 50px;
 `
 
 export const ProfilePicture = styled.img`
-  border-radius: 50%;
-  width: 100%;
+  height: 100%;
+  max-width: 100%;
 `
 
 export const ContentWrapperFlex = styled.div`

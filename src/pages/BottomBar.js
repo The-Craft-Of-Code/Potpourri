@@ -50,7 +50,7 @@ export function BottomBar(props) {
             Get in touch
           </LinkButton>
           <RouterLinkButton to="about" target="_blank" rel="noopener noreferrer">
-            About Me
+            About Us
           </RouterLinkButton>
         </NavBarContainer>
         <SocialsContainerWrapper>

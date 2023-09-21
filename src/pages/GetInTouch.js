@@ -25,8 +25,8 @@ export function GetInTouch(props) {
     }, 3000);
   }
 
-  const handleSubmit = (email) => {
-    window.open(`mailto:${email}`);
+  const handleSubmit = (body) => {
+    window.open("mailto:admin@potpourri.agency?subject=Get in touch&body=" + body);
   }
 
   useEffect(() => {
@@ -44,17 +44,16 @@ export function GetInTouch(props) {
           <SecondaryText>
             Fulfil your writing needs.
           </SecondaryText>
-          <EmailBar onSubmit={(email) => handleSubmit(email)} onError={(error) => handleError(error)}/>
+          <EmailBar onSubmit={(body) => handleSubmit(body)} onError={(error) => handleError(error)}/>
         </PrimaryContainer>
         <GraphicContentContainer>
-          {/*  TODO: Add stuff */}
         </GraphicContentContainer>
+        <ErrorContainer>
+          <ErrorContainerInner show={error ? 1 : 0}>
+            {errorMessage}
+          </ErrorContainerInner>
+        </ErrorContainer>
       </Container>
-      <ErrorContainer>
-        <ErrorContainerInner show={error ? 1 : 0}>
-          {errorMessage}
-        </ErrorContainerInner>
-      </ErrorContainer>
     </>
   )
 }

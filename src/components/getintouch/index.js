@@ -35,7 +35,6 @@ export const SecondaryText = styled.div`
 `
 
 export const ErrorContainer = styled.div`
-  position: absolute;
   bottom: 30px;
   width: 100%;
   display: flex;

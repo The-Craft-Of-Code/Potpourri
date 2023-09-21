@@ -20,15 +20,15 @@ export function TestimonialCard(props) {
         {testimonial.title}
       </ReviewTitle>
       <ContentContainer>
-        <PictureContainer>
-          <ProfilePicture
-            src={testimonial.profileImage}/>
-        </PictureContainer>
         <ContentWrapperFlex>
           <TextContainer>
             <Name>
               {testimonial.name}
             </Name>
+            <PictureContainer>
+              <ProfilePicture
+                  src={testimonial.profileImage}/>
+            </PictureContainer>
             <EmploymentTitle>
               {testimonial.employmentTitle}
             </EmploymentTitle>
