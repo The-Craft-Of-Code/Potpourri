@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.3d21230a.css",
-    "main.js": "/static/js/main.d898fa32.js",
+    "main.js": "/static/js/main.d5e2ffc7.js",
     "static/js/787.f5d8c0b8.chunk.js": "/static/js/787.f5d8c0b8.chunk.js",
-    "static/media/snigdha.svg": "/static/media/snigdha.f1a31cff9c85a6d609ef8bead6502265.svg",
     "static/media/blur-mesh.png": "/static/media/blur-mesh.a05a0a9d634f25229609.png",
     "static/media/hero.png": "/static/media/hero.844e374b0c76bd75e1f0.png",
     "static/media/Band_Capricio_Logo.png": "/static/media/Band_Capricio_Logo.ad3cab04142e21e80f42.png",
@@ -14,11 +13,11 @@
     "index.html": "/index.html",
     "static/media/profile-icon.svg": "/static/media/profile-icon.f52e43888fa76ec9f3f6694a5a261f3f.svg",
     "main.3d21230a.css.map": "/static/css/main.3d21230a.css.map",
-    "main.d898fa32.js.map": "/static/js/main.d898fa32.js.map",
+    "main.d5e2ffc7.js.map": "/static/js/main.d5e2ffc7.js.map",
     "787.f5d8c0b8.chunk.js.map": "/static/js/787.f5d8c0b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d21230a.css",
-    "static/js/main.d898fa32.js"
+    "static/js/main.d5e2ffc7.js"
   ]
 }
