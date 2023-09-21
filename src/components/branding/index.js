@@ -22,7 +22,7 @@ export const ListButton = styled.div`
   font-size: calc(0.8rem + 0.5vw);
   font-family: Shocka Serif, serif;
   transition: all 0.2s ease-in-out;
-  
+
   &:hover {
     cursor: pointer;
     color: ${colors.primaryColor};
@@ -49,6 +49,7 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   padding-left: 3em;
   padding-right: 3em;
+  flex: 2;
 `
 
 export const BrandListContainer = styled.div`
@@ -56,14 +57,14 @@ export const BrandListContainer = styled.div`
   flex-direction: row;
   background-color: #FECCC3;
   overflow-x: hidden;
-  flex: 1;
+  flex: 5;
   align-items: center;
 `
 
 export const MarqueeContainer = styled.div`
   display: flex;
   flex-direction: row;
-  --gap: 5rem;
+  --gap: 15rem;
   user-select: none;
   gap: var(--gap);
   animation: scroll 20s linear infinite;
@@ -78,9 +79,9 @@ export const MarqueeContainer = styled.div`
 
 `
 
-export const BrandingText = styled.h1`
+export const BrandingImage = styled.img`
   padding: 0;
-  font-size: calc(60px + 2vw);
-  color: #fd9987;
-  gap: var(--gap);
+  margin: 0;
+  height: 200px;
+  object-fit: contain;
 `

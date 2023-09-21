@@ -20,14 +20,15 @@ export function BottomBar(props) {
         <ContactContainer>
           <PrimaryContactText>
             PST Snigdha
-            Address Line 1
-            Address Line 2
+          </PrimaryContactText>
+          <PrimaryContactText>
+            Address - 103, Opera Block C, East Marredpally, Secunderabad, Telangana - 500026
           </PrimaryContactText>
           <PrimaryPhoneNumber>
-            +91 9876543210
+            +91 7702901602
           </PrimaryPhoneNumber>
-          <EmailAddress>
-            contact@potpurri.com
+          <EmailAddress href={"mailto:admin@potpourri.agency"}>
+            admin@potpourri.agency
           </EmailAddress>
         </ContactContainer>
       </BottomBarLeft>
@@ -54,16 +55,16 @@ export function BottomBar(props) {
         </NavBarContainer>
         <SocialsContainerWrapper>
           <SocialsContainer>
-            <SocialAnchor color={"#3b5998"}>
+            <SocialAnchor color={"#3b5998"} href={'#'} rel="noopener noreferrer">
               <AiFillFacebook/>
             </SocialAnchor>
-            <SocialAnchor color={"#0077b5"}>
+            <SocialAnchor color={"#0077b5"} href={'https://www.linkedin.com/company/potpourri-consulting-firm'} target="_blank" rel="noopener noreferrer">
               <AiFillLinkedin/>
             </SocialAnchor>
-            <SocialAnchor color={"#00ab6c"}>
+            <SocialAnchor color={"#00ab6c"} href={'#'} rel="noopener noreferrer">
               <AiFillMediumSquare/>
             </SocialAnchor>
-            <SocialAnchor color={"#c32aa3"}>
+            <SocialAnchor color={"#c32aa3"} href={'https://www.instagram.com/potpourri.co/'} target="_blank" rel="noopener noreferrer">
               <AiFillInstagram/>
             </SocialAnchor>
           </SocialsContainer>

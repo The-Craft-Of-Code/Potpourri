@@ -28,7 +28,7 @@ export const BottomBarContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
-  
+
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 
@@ -162,6 +162,7 @@ export const SocialsContainer = styled.div`
 export const SocialAnchor = styled.a`
   font-size: 1.5em;
   transition: all 0.2s ease-in-out;
+  color: inherit;
 
   &:hover {
     scale: 1.25;

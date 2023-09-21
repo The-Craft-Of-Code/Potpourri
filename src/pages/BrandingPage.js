@@ -3,10 +3,16 @@ import React, {useEffect} from "react";
 import {Container, PrimaryTitle, SecondaryTitle} from "../components/root";
 import useElementOnScreen from "../utils/useOnScreen";
 import {
-  BrandingContainer, BrandingText, BrandListContainer,
+  BrandingContainer, BrandingImage, BrandListContainer,
   MarqueeContainer,
   TitleContainer
 } from "../components/branding";
+
+import artha_logo from "../assets/images/brands/Artha_Logo.png";
+import Band_Capricio_Logo from "../assets/images/brands/Band_Capricio_Logo.png";
+import Behold_social from "../assets/images/brands/Behold_social.png";
+import Ikshana_Logo from "../assets/images/brands/Ikshana_Logo.png";
+import Virtual_Overseas_Consultancy_logo from "../assets/images/brands/Virtual_Overseas_Consultancy_logo.png";
 
 //Use imports when enabling question container
 //import {
@@ -30,7 +36,7 @@ export const BrandingPage = (props) => {
     }
   }, [isBrandingVisible, props]);
 
-  const branding = ["abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz"];
+  const branding = [artha_logo, Band_Capricio_Logo, Behold_social, Ikshana_Logo, Virtual_Overseas_Consultancy_logo];
 
   return (
     <Container ref={brandingRef}>
@@ -62,27 +68,21 @@ export const BrandingPage = (props) => {
             {
               branding.map((brand, index) => {
                 return (
-                  <BrandingText key={index}>
-                    {brand}
-                  </BrandingText>
+                  <BrandingImage key={index} src={brand}/>
                 )
               })
             }
             {
               branding.map((brand, index) => {
                 return (
-                  <BrandingText key={index}>
-                    {brand}
-                  </BrandingText>
+                  <BrandingImage key={index} src={brand}/>
                 )
               })
             }
             {
               branding.map((brand, index) => {
                 return (
-                  <BrandingText key={index}>
-                    {brand}
-                  </BrandingText>
+                  <BrandingImage key={index} src={brand}/>
                 )
               })
             }
