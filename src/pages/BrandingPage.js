@@ -15,15 +15,13 @@ import Ikshana_Logo from "../assets/images/brands/Ikshana_Logo.png";
 import Virtual_Overseas_Consultancy_logo from "../assets/images/brands/Virtual_Overseas_Consultancy_logo.png";
 
 //Use imports when enabling question container
-//import {
-//   BrandingContainer, BrandingText, BrandListContainer,
-//   LeftImage,
-//   ListButton, MarqueeContainer,
-//   RightContainer,
-//   RowContainer,
-//   TitleContainer
-// } from "../components/branding";
-// import blurImage from "../assets/images/blur-mesh.png";
+import {
+  LeftImage,
+  ListButton,
+  RightContainer,
+  RowContainer,
+} from "../components/branding";
+import blurImage from "../assets/images/blur-mesh.png";
 
 export const BrandingPage = (props) => {
 
@@ -40,20 +38,20 @@ export const BrandingPage = (props) => {
 
   return (
     <Container ref={brandingRef}>
-    {/* //   <RowContainer>
-    //     <LeftImage src={blurImage}/>
-    //     <RightContainer>
-    //       <ListButton>
-    //         How can we help make an impact?
-    //       </ListButton>
-    //       <ListButton>
-    //         How to get in touch with us?
-    //       </ListButton>
-    //       <ListButton>
-    //         How can you be sure?
-    //       </ListButton>
-    //     </RightContainer>
-    //   </RowContainer> */}
+       <RowContainer>
+         <LeftImage src={blurImage}/>
+         <RightContainer>
+           <ListButton>
+             How can we help make an impact?
+            </ListButton>
+            <ListButton>
+             How to get in touch with us?
+           </ListButton>
+           <ListButton>
+             How can you be sure?
+           </ListButton>
+         </RightContainer>
+       </RowContainer>
       <BrandingContainer>
         <TitleContainer>
           <PrimaryTitle>
